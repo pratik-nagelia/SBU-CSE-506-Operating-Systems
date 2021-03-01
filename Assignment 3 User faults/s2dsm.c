@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
 		char *token;
 		token = strtok(buffer, "-"); 
 		len = strtoul(token, NULL, 0);
-		printf("length received from peer %lu\n", len);
+		printf("Memory length received from peer %lu\n", len);
 		token = strtok(NULL, "-");
 		addr = token;
 		printf("Address received from peer: %s \n", token);
