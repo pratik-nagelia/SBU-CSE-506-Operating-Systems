@@ -1,0 +1,20 @@
+diff --git a/net/socket.c b/net/socket.c
+index 976426d03f09..87d769ea5dfb 100644
+--- a/net/socket.c
++++ b/net/socket.c
+@@ -1799,6 +1799,7 @@ int __sys_accept4(int fd, struct sockaddr __user *upeer_sockaddr,
+ {
+ 	int ret = -EBADF;
+ 	struct fd f;
++	printk("Inside accept call");
+ 
+ 	f = fdget(fd);
+ 	if (f.file) {
+@@ -1861,6 +1862,7 @@ int __sys_connect(int fd, struct sockaddr __user *uservaddr, int addrlen)
+ {
+ 	int ret = -EBADF;
+ 	struct fd f;
++	printk("Inside connect call");
+ 
+ 	f = fdget(fd);
+ 	if (f.file) {

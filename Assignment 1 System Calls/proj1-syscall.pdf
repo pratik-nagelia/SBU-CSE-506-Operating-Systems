@@ -1,0 +1,749 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.geeksforgeeks.org/socket-programming-cc/)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 401.5736 221.2929 413.5736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://opensourceforu.com/2012/06/gnu-make-in-detail-for-beginners/)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 383.5736 236.2929 395.5736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.kernel.org/doc/Documentation/printk-formats.txt)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 365.5736 116.8029 377.5736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.atlassian.com/git/tutorials/saving-changes/git-diff)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 347.5736 112.3729 359.5736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://man7.org/linux/man-pages/man3/errno.3.html)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 329.5736 134.0229 341.5736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://man7.org/linux/man-pages/man3/getopt.3.html)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 311.5736 139.0329 323.5736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/Annots [ 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R ] /Contents 28 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 27 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+13 0 obj
+<<
+/Contents 29 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 27 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+14 0 obj
+<<
+/Outlines 16 0 R /PageLabels 30 0 R /PageMode /UseNone /Pages 27 0 R /Type /Catalog
+>>
+endobj
+15 0 obj
+<<
+/Author () /CreationDate (D:20210131121157+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20210131121157+05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Project 1: System Call) /Trapped /False
+>>
+endobj
+16 0 obj
+<<
+/Count 12 /First 17 0 R /Last 23 0 R /Type /Outlines
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 683.0236 0 ] /Next 18 0 R /Parent 16 0 R /Title (Introduction)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 448.8236 0 ] /Next 19 0 R /Parent 16 0 R /Prev 17 0 R /Title (Recommended Background Reading)
+>>
+endobj
+19 0 obj
+<<
+/Count 3 /Dest [ 12 0 R /XYZ 62.69291 301.8236 0 ] /First 20 0 R /Last 22 0 R /Next 23 0 R /Parent 16 0 R 
+  /Prev 18 0 R /Title (Part 1. Adding printk\(\))
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 181.6236 0 ] /Next 21 0 R /Parent 19 0 R /Title (P1.1: Understanding source code)
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 13 0 R /XYZ 62.69291 679.8236 0 ] /Next 22 0 R /Parent 19 0 R /Prev 20 0 R /Title (P1.2: Adding printk\(\))
+>>
+endobj
+22 0 obj
+<<
+/Dest [ 13 0 R /XYZ 62.69291 583.8236 0 ] /Parent 19 0 R /Prev 21 0 R /Title (P1.3: Test your kernel)
+>>
+endobj
+23 0 obj
+<<
+/Count 3 /Dest [ 13 0 R /XYZ 62.69291 511.8236 0 ] /First 24 0 R /Last 26 0 R /Parent 16 0 R /Prev 19 0 R 
+  /Title (Part 2: Adding a new system call)
+>>
+endobj
+24 0 obj
+<<
+/Dest [ 13 0 R /XYZ 62.69291 412.8236 0 ] /Next 25 0 R /Parent 23 0 R /Title (P2.1: Implementing the system call)
+>>
+endobj
+25 0 obj
+<<
+/Dest [ 13 0 R /XYZ 62.69291 340.8236 0 ] /Next 26 0 R /Parent 23 0 R /Prev 24 0 R /Title (P2.2: Writing a test program)
+>>
+endobj
+26 0 obj
+<<
+/Dest [ 13 0 R /XYZ 62.69291 244.8236 0 ] /Parent 23 0 R /Prev 25 0 R /Title (P2.3: Test your system call)
+>>
+endobj
+27 0 obj
+<<
+/Count 2 /Kids [ 12 0 R 13 0 R ] /Type /Pages
+>>
+endobj
+28 0 obj
+<<
+/Length 6816
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 129.9049 0 Td (Project 1: System Call) Tj T* -129.9049 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 725.0236 cm
+Q
+q
+1 0 0 1 62.69291 725.0236 cm
+Q
+q
+1 0 0 1 62.69291 713.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Handed out:) Tj /F1 10 Tf ( Tue, Feb 2, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 707.0236 cm
+Q
+q
+1 0 0 1 62.69291 695.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Due:) Tj /F1 10 Tf ( Friday, Feb 19, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 695.0236 cm
+Q
+q
+1 0 0 1 62.69291 662.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 608.0236 cm
+q
+BT 1 0 0 1 0 38 Tm .56881 Tw 12 TL /F1 10 Tf 0 0 0 rg (The goal of this project is to get used to Linux development environment and modify Linux kernel source) Tj T* 0 Tw .799398 Tw (code. The project is split into two parts. The first part is analyzing a given user-space socket application) Tj T* 0 Tw .685251 Tw (and adding ) Tj /F3 10 Tf (printk\(\)) Tj /F1 10 Tf ( to the system call entries in Linux kernel. The second part is to add one new system) Tj T* 0 Tw (call which encrypts a given string and prints out encrypted string to kernel message.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 578.0236 cm
+q
+.960784 .960784 .862745 rg
+n 136.17 0 90 12 re f*
+BT 1 0 0 1 0 14 Tm -0.048346 Tw 12 TL /F1 10 Tf 0 0 0 rg (Make a folder named with your SBU ID \(e.g., 112233445\), put all your submission files in the folder, create) Tj T* 0 Tw (a single gzip-ed tarball named ) Tj /F4 10 Tf ([SBU ID].tar.gz) Tj /F1 10 Tf (, and turn the gzip-ed tarball to Blackboard.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 460.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 108 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 72 84 54 12 re f*
+.960784 .960784 .862745 rg
+n 174 84 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 72 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 60 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 48 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 36 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 54 12 re f*
+BT 1 0 0 1 0 86 Tm 12 TL /F4 10 Tf 0 0 0 rg ($  tar czvf ) Tj .4 .4 .4 rg (112233445) Tj 0 0 0 rg (.tar.gz ) Tj .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/code-socket.tar.gz) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/printk.patch) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/printk.png) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/syscall.patch) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/syscall.tar.gz) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/syscall.png) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 427.8236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Recommended Background Reading) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 415.8236 cm
+Q
+q
+1 0 0 1 62.69291 415.8236 cm
+Q
+q
+1 0 0 1 62.69291 403.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Socket Programming in C/C++) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 397.8236 cm
+Q
+q
+1 0 0 1 62.69291 385.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (GNU Make in Detail for Beginners) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 379.8236 cm
+Q
+q
+1 0 0 1 62.69291 367.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (printk\(\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 361.8236 cm
+Q
+q
+1 0 0 1 62.69291 349.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (git diff) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 343.8236 cm
+Q
+q
+1 0 0 1 62.69291 331.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (ERRNO\(3\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 325.8236 cm
+Q
+q
+1 0 0 1 62.69291 313.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (GETOPT\(3\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 313.8236 cm
+Q
+q
+1 0 0 1 62.69291 280.8236 cm
+q
+.960784 .960784 .862745 rg
+n 123.4975 0 84 21 re f*
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Part 1. Adding ) Tj /F4 17.5 Tf (printk\(\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 250.8236 cm
+q
+.960784 .960784 .862745 rg
+n 133.1708 12 108 12 re f*
+BT 1 0 0 1 0 14 Tm 3.692706 Tw 12 TL /F1 10 Tf 0 0 0 rg (The attached source code ) Tj /F4 10 Tf (code-socket.tar.gz) Tj /F1 10 Tf ( is a simple socket application that exchanges) Tj T* 0 Tw (messages between a server and client. It consists of three files as shown in below.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 193.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 48 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 12 24 12 12 re f*
+BT 1 0 0 1 0 26 Tm 12 TL /F4 10 Tf 0 0 0 rg ($ ) Tj 0 .501961 0 rg (cd) Tj 0 0 0 rg ( code-socket) Tj T* ($ ls) Tj T* (client.c  Makefile  server.c) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 163.6236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P1.1: Understanding source code) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 121.6236 cm
+q
+.960784 .960784 .862745 rg
+n 291.8 0 108 12 re f*
+BT 1 0 0 1 0 26 Tm .239318 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] Carefully read above three source file to understand how a simple network client/server works.) Tj T* 0 Tw 1.804269 Tw (Once you completely understand each file, add comments of each line \(M1-M10, S1-S9, and C1-C7\)) Tj T* 0 Tw (explaining what the line means. Turn in the gzip-ed tarball named ) Tj /F4 10 Tf (code-socket.tar.gz) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+29 0 obj
+<<
+/Length 6909
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 691.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 72 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 50 Tm /F4 10 Tf 12 TL ($  tar czvf code-socket.tar.gz code-socket/) Tj T* (code-socket/) Tj T* (code-socket/client.c) Tj T* (code-socket/server.c) Tj T* (code-socket/Makefile) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 661.8236 cm
+q
+.960784 .960784 .862745 rg
+n 95.85 0 72 18 re f*
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P1.2: Adding ) Tj /F4 15 Tf (printk\(\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 595.8236 cm
+q
+.960784 .960784 .862745 rg
+n 0 24 48 12 re f*
+.960784 .960784 .862745 rg
+n 72.45597 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 421.2985 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 439.2985 12 6.591235 12 re f*
+.960784 .960784 .862745 rg
+n 445.8898 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 173.98 0 72 12 re f*
+BT 1 0 0 1 0 50 Tm 2.159983 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] Now you understand how the user-space application works. To understand how a kernel) Tj T* 0 Tw 3.241318 Tw (system call is called, print any message at the very beginning of system call implementations of) Tj T* 0 Tw 1.107984 Tw /F4 10 Tf (accept\(\)) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (connect\(\)) Tj /F1 10 Tf ( in Linux kernel v5.8. Check if the modified kernel prints out messages you) Tj T* 0 Tw .591235 Tw (added when you run the network client/server. Then create a patch against kernel v5.8 using ) Tj /F4 10 Tf (git) Tj ( ) Tj (diff) Tj /F1 10 Tf  T* 0 Tw (command and turn in the patch named ) Tj /F4 10 Tf (printk.patch) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 565.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P1.3: Test your kernel) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 523.8236 cm
+q
+.960784 .960784 .862745 rg
+n 317.5912 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 82.3373 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 124.776 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 187.5533 12 30 12 re f*
+.960784 .960784 .862745 rg
+n 337.3252 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 33.35 0 60 12 re f*
+BT 1 0 0 1 0 26 Tm 1.534651 Tw 12 TL /F1 10 Tf 0 0 0 rg ([5 points] Take the screenshot of your kernel debug message using ) Tj /F4 10 Tf (dmesg) Tj /F1 10 Tf ( while running the network) Tj T* 0 Tw .878651 Tw (client/server. Run ) Tj /F4 10 Tf (server) Tj /F1 10 Tf (, ) Tj /F4 10 Tf (client) Tj /F1 10 Tf (, and ) Tj /F4 10 Tf (dmesg) Tj /F1 10 Tf ( in one ssh session using ) Tj /F4 10 Tf (tmux) Tj /F1 10 Tf (. Turn in the screenshot) Tj T* 0 Tw (named ) Tj /F4 10 Tf (printk.png) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 490.8236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Part 2: Adding a new system call) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 424.8236 cm
+q
+.960784 .960784 .862745 rg
+n 138.6191 48 96 12 re f*
+.960784 .960784 .862745 rg
+n 397.2458 12 48 12 re f*
+.960784 .960784 .862745 rg
+n 411.85 0 36 12 re f*
+BT 1 0 0 1 0 50 Tm .50152 Tw 12 TL /F1 10 Tf 0 0 0 rg (Add a new system call named ) Tj /F4 10 Tf (sys_s2_encrypt\(\)) Tj /F1 10 Tf ( that takes two arguments, a NULL-terminated string) Tj T* 0 Tw .938876 Tw (and an encryption key, which is a positive integer between 1 and 5. The system call encrypts the given) Tj T* 0 Tw -0.12668 Tw (string by simply adding the given integer number. For example, it encrypts "hello" to "ifmmp" by adding 1 to) Tj T* 0 Tw 1.853984 Tw (each character of the string. After encryption, it prints out the encrypted string using ) Tj /F4 10 Tf (printk\(\)) Tj /F1 10 Tf (. The) Tj T* 0 Tw (system call returns 0 when everything is okay. If the encryption key is out of bound, it returns ) Tj /F4 10 Tf (EINVAL) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 394.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P2.1: Implementing the system call) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 352.8236 cm
+q
+.960784 .960784 .862745 rg
+n 211.4459 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 229.4459 12 10.55798 12 re f*
+.960784 .960784 .862745 rg
+n 240.0039 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 78 12 re f*
+BT 1 0 0 1 0 26 Tm 1.720651 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] You should implement the system call in a separate file under linux/kernel directory. Then) Tj T* 0 Tw 4.557984 Tw (create a patch against kernel v5.8 using ) Tj /F4 10 Tf (git) Tj ( ) Tj (diff) Tj /F1 10 Tf ( command and turn in the patch named) Tj T* 0 Tw /F4 10 Tf (syscall.patch) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 322.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P2.2: Writing a test program) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 256.8236 cm
+q
+.960784 .960784 .862745 rg
+n 306.6898 48 58.99198 12 re f*
+.960784 .960784 .862745 rg
+n 365.6818 48 10.99198 12 re f*
+.960784 .960784 .862745 rg
+n 376.6738 48 12 12 re f*
+.960784 .960784 .862745 rg
+n 388.6738 48 10.99198 12 re f*
+.960784 .960784 .862745 rg
+n 399.6658 48 18 12 re f*
+.960784 .960784 .862745 rg
+n 0 36 96 12 re f*
+.960784 .960784 .862745 rg
+n 398.2073 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 28.25784 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 52.25784 12 7.57784 12 re f*
+.960784 .960784 .862745 rg
+n 59.83568 12 30 12 re f*
+.960784 .960784 .862745 rg
+n 296.9062 12 96 12 re f*
+.960784 .960784 .862745 rg
+n 210.66 0 84 12 re f*
+BT 1 0 0 1 0 50 Tm 4.991984 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] Write a simple test program takes two options, ) Tj /F4 10 Tf (-s string) Tj ( ) Tj (-k) Tj ( ) Tj (key) Tj /F1 10 Tf ( and calls) Tj T* 0 Tw 1.228443 Tw /F4 10 Tf (sys_s2_encrypt\(\)) Tj /F1 10 Tf ( with the string and key from the command line. You should implement command) Tj T* 0 Tw .771235 Tw (line argument processing using GETOPT\(3\) and the code should be able to build using ) Tj /F4 10 Tf (make) Tj /F1 10 Tf ( and clean) Tj T* 0 Tw 1.57784 Tw (using ) Tj /F4 10 Tf (make) Tj ( ) Tj (clean) Tj /F1 10 Tf (. The program prints out the return value of ) Tj /F4 10 Tf (sys_s2_encrypt\(\)) Tj /F1 10 Tf (. Turn in gzip-ed) Tj T* 0 Tw (tarball of the source code and Makefile, named ) Tj /F4 10 Tf (syscall.tar.gz) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 226.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P2.3: Test your system call) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 184.8236 cm
+q
+.960784 .960784 .862745 rg
+n 293.683 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 134.6168 12 30 12 re f*
+.960784 .960784 .862745 rg
+n 294.593 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 66 12 re f*
+BT 1 0 0 1 0 26 Tm .11936 Tw 12 TL /F1 10 Tf 0 0 0 rg ([5 points] Take a screenshot of your kernel debug message using ) Tj /F4 10 Tf (dmesg) Tj /F1 10 Tf ( while running your test program.) Tj T* 0 Tw 2.57936 Tw (Run your test program and ) Tj /F4 10 Tf (dmesg) Tj /F1 10 Tf ( in one ssh session using ) Tj /F4 10 Tf (tmux) Tj /F1 10 Tf (. Turn in the screenshot named) Tj T* 0 Tw /F4 10 Tf (syscall.png) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+30 0 obj
+<<
+/Nums [ 0 31 0 R 1 32 0 R ]
+>>
+endobj
+31 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+32 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 33
+0000000000 65535 f 
+0000000073 00000 n 
+0000000134 00000 n 
+0000000241 00000 n 
+0000000353 00000 n 
+0000000468 00000 n 
+0000000573 00000 n 
+0000000777 00000 n 
+0000000997 00000 n 
+0000001208 00000 n 
+0000001423 00000 n 
+0000001625 00000 n 
+0000001828 00000 n 
+0000002084 00000 n 
+0000002290 00000 n 
+0000002396 00000 n 
+0000002676 00000 n 
+0000002751 00000 n 
+0000002865 00000 n 
+0000003010 00000 n 
+0000003189 00000 n 
+0000003322 00000 n 
+0000003460 00000 n 
+0000003584 00000 n 
+0000003757 00000 n 
+0000003893 00000 n 
+0000004036 00000 n 
+0000004165 00000 n 
+0000004233 00000 n 
+0000011101 00000 n 
+0000018062 00000 n 
+0000018112 00000 n 
+0000018146 00000 n 
+trailer
+<<
+/ID 
+[<7294c1e30489c7c8fccdb1fc25639d9c><7294c1e30489c7c8fccdb1fc25639d9c>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 15 0 R
+/Root 14 0 R
+/Size 33
+>>
+startxref
+18180
+%%EOF

@@ -1,0 +1,76 @@
+diff --git a/arch/x86/entry/syscalls/syscall_64.tbl b/arch/x86/entry/syscalls/syscall_64.tbl
+index 78847b32e137..75d2f26f80c1 100644
+--- a/arch/x86/entry/syscalls/syscall_64.tbl
++++ b/arch/x86/entry/syscalls/syscall_64.tbl
+@@ -360,6 +360,7 @@
+ 437	common	openat2			sys_openat2
+ 438	common	pidfd_getfd		sys_pidfd_getfd
+ 439	common	faccessat2		sys_faccessat2
++440	64	s2_encrypt	sys_s2_encrypt
+ 
+ #
+ # x32-specific system call numbers start at 512 to avoid cache impact
+diff --git a/include/linux/syscalls.h b/include/linux/syscalls.h
+index b951a87da987..6ccd354e6eb7 100644
+--- a/include/linux/syscalls.h
++++ b/include/linux/syscalls.h
+@@ -1424,4 +1424,6 @@ long compat_ksys_semtimedop(int semid, struct sembuf __user *tsems,
+ 			    unsigned int nsops,
+ 			    const struct old_timespec32 __user *timeout);
+ 
++asmlinkage long sys_s2_encrypt(char __user *str, int key);
++
+ #endif
+diff --git a/kernel/Makefile b/kernel/Makefile
+index f3218bc5ec69..0e44a00f8798 100644
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -48,6 +48,7 @@ obj-y += irq/
+ obj-y += rcu/
+ obj-y += livepatch/
+ obj-y += dma/
++obj-y += encrypt.o
+ 
+ obj-$(CONFIG_CHECKPOINT_RESTORE) += kcmp.o
+ obj-$(CONFIG_FREEZER) += freezer.o
+diff --git a/kernel/encrypt.c b/kernel/encrypt.c
+new file mode 100644
+index 000000000000..8c2bb76e0611
+--- /dev/null
++++ b/kernel/encrypt.c
+@@ -0,0 +1,34 @@
++#include <linux/syscalls.h>
++#include <linux/kernel.h>
++#include <linux/err.h>
++#define MAX 256
++
++SYSCALL_DEFINE2(s2_encrypt, char __user *, str, int, key)
++{
++	int code = -EINVAL, i = 0;
++	char *input;
++	int length = strnlen_user(str, MAX);
++	if(length > MAX) {
++		return code;
++	}
++	
++	input = kmalloc(length, GFP_KERNEL);
++
++	if (copy_from_user(input, str, length) != 0) {
++		return -EFAULT;
++	}
++
++	if (input[0] == '\0' || key < 1 || key > 5) {
++		return code;
++	}
++
++	while (input[i]!='\0') {
++		input[i] = input[i] + key;
++		i++;
++	}
++	printk("%s\n", input);
++	
++	kfree(input);
++
++	return 0;
++}
+\ No newline at end of file
