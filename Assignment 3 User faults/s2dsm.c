@@ -120,7 +120,12 @@ int main(int argc, char *argv[])
 		page_size = sysconf(_SC_PAGE_SIZE);
 		len = num_pages * page_size;	
 		addr = mmap(NULL, len, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
-		printf("Address mapping created : %p\n", addr);
+		if (addr == MAP_FAILED) { 
+			perror("Error in address allocation in mmap ");
+			exit(EXIT_FAILURE);
+		}
+		printf("The mmapped memory size : %lu\n", len);
+		printf("Address mapping created at : %p\n", addr);
         snprintf(buffer, BUFF_SIZE, "%lu-%p", len, addr);
 		send(remote_socket, buffer , strlen(buffer) , 0 );
 
@@ -141,7 +146,7 @@ int main(int argc, char *argv[])
 		printf("Address returned by mmap(): %p \n", addr);
 
 		if (addr == MAP_FAILED) {
-			perror("error in address creation in mmap ");
+			perror("error in address allocation in mmap ");
 			exit(EXIT_FAILURE);
 		}
 
