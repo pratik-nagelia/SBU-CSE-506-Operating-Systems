@@ -25,12 +25,17 @@
 
 #define errExit(msg)    do { perror(msg); exit(EXIT_FAILURE);    \
     } while (0)
+enum status {m, s, i};
 
 static inline void ignore_return() {}
 
 static void *fault_handler_thread(void *arg);
+static void *responder(void *arg);
 
-static int page_size;
+
+static int page_size, new_socket, remote_socket;
+static unsigned long num_pages;
+static enum status msi_array[100];
 
 void printPageContents(const char *addr, unsigned long num_pages, int request_page) {
     char page_output[page_size + 1];
@@ -54,15 +59,41 @@ void updatePageContents(char *addr, int request_page, unsigned long num_pages, c
     }
 }
 
+void checkWithPeer(const char *message) {
+    // snprintf(buffer, BUFF_SIZE, "%lu-%p", len, addr);
+    send(remote_socket, message, strlen(message), 0);
+}
+
+void fillWithInvalid(enum status * msiArray) {
+    for (int j = 0; j <= num_pages; ++j) {
+        msiArray[j] = i;
+    }
+}
+
+char getMSItype(enum status value) {
+    switch (value) {
+        case m: return 'M';
+        case s: return 'S';
+        case i: return 'I';
+        default : return '\0';
+    }
+}
+
+void printMsiArray(enum status * msiArray) {
+    for (int j = 0; j < num_pages; ++j) {
+        printf(" [*] Page %d : %c \n", j, getMSItype(msiArray[j]));
+    }
+}
+
 int main(int argc, char *argv[]) {
-    int local_server_fd, remote_socket, new_socket;
+    int local_server_fd;
     struct sockaddr_in local_addr, remote_addr;
     int opt = 1, first_connection_failed = 0;
     int addrlen = sizeof(local_addr);
     char buffer[BUFF_SIZE] = {0};
     char *addr;
 
-    unsigned long local_port, remote_port, num_pages = 0, len = 0;
+    unsigned long local_port, remote_port, len = 0;
 
     /* Handling Input ports */
     if (argc != 3) {
@@ -178,7 +209,7 @@ int main(int argc, char *argv[]) {
     /* Assignment 3 Part 2 Starts from here */
 
     char mode;
-    int request_page, s;
+    int request_page, thread_ret;
     long uffd;
     struct uffdio_api uffdio_api;
     struct uffdio_register uffdio_register;
@@ -202,15 +233,27 @@ int main(int argc, char *argv[]) {
     if (ioctl(uffd, UFFDIO_REGISTER, &uffdio_register) == -1)
         errExit("ioctl-UFFDIO_REGISTER");
 
-    s = pthread_create(&thr, NULL, fault_handler_thread, (void *) uffd);
-    if (s != 0) {
-        errno = s;
+    thread_ret = pthread_create(&thr, NULL, fault_handler_thread, (void *) uffd);
+    if (thread_ret != 0) {
+        errno = thread_ret;
         errExit("pthread_create");
     }
 
+
+    
+    pthread_t resp;
+    
+    fillWithInvalid(msi_array);
+    thread_ret = pthread_create(&resp, NULL, responder, (void *) uffd);
+    if (thread_ret != 0) {
+        errno = thread_ret;
+        errExit("pthread_create");
+    }
+
+
     /* Starting user for operations */
     do {
-        printf("> Which command should I run? (r:read, w:write): ");
+        printf("> Which command should I run? (r:read, w:write, , v:view msi array): ");
         ignore_return(scanf(" %c", &mode));
         printf("\n> For which page? (0-%lu, or -1 for all): ", num_pages - 1);
         ignore_return(scanf(" %d", &request_page));
@@ -224,7 +267,10 @@ int main(int argc, char *argv[]) {
                 printf("The length of message exceeds page size. The message will be truncated \n");
             }
             updatePageContents(addr, request_page, num_pages, message);
+            checkWithPeer(message);
             printPageContents(addr, num_pages, request_page);
+        } else if (mode == 'v') {
+            printMsiArray(msi_array);
         } else {
             printf("Please enter valid option : r or w");
         }
@@ -232,6 +278,23 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
+
+static void *responder(void *arg) {
+    char buffer[BUFF_SIZE];
+    int bytesRead = 0;
+    for (;;) {
+        memset(buffer, '\0',BUFF_SIZE);
+        bytesRead = read(new_socket, buffer, 1024);
+        if (bytesRead < 0) {
+            perror("Error in reading");
+            exit(EXIT_FAILURE);
+        } else if (bytesRead > 0) {
+            printf("%s\n", buffer);    
+        } 
+    }
+}
+
 
 static void *fault_handler_thread(void *arg) {
     static struct uffd_msg msg;
