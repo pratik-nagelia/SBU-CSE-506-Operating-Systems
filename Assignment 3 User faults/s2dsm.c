@@ -33,12 +33,14 @@ static void *fault_handler_thread(void *arg);
 static int page_size;
 
 void printPageContents(const char *addr, unsigned long num_pages, int request_page) {
+    char page_output[page_size + 1];
     for (int i = ((request_page == -1) ? 0 : request_page);
          i <= ((request_page == -1) ? (num_pages - 1) : request_page); ++i) {
-        printf(" [*] Page %d: \n", i);
-        printf("%s\n", addr + (i * page_size));
+        sprintf(page_output, "%s", addr + (i * page_size));
+        printf(" [*] Page %d: \n%s\n", i, page_output);
     }
 }
+
 
 void updatePageContents(char *addr, int request_page, unsigned long num_pages, const char *message) {
     int l;
@@ -133,12 +135,12 @@ int main(int argc, char *argv[]) {
             printf("Subsequent Connection Attempt Succeeded \n");
         }
     }
+    page_size = sysconf(_SC_PAGE_SIZE);
 
     /* If first_connection_failed, then this is the first process and it would ask for user input */
     if (first_connection_failed) {
         printf("How many pages would you like to allocate (greater than 0)? \n");
         if (scanf("%lu", &num_pages) == EOF) { perror("EOF on scanning input"); }
-        page_size = sysconf(_SC_PAGE_SIZE);
         len = num_pages * page_size;
         addr = mmap(NULL, len, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
         if (addr == MAP_FAILED) {
@@ -159,6 +161,7 @@ int main(int argc, char *argv[]) {
         token = strtok(buffer, "-");
         len = strtoul(token, NULL, 0);
         printf("Memory length received from peer %lu\n", len);
+        num_pages = len / page_size;
         token = strtok(NULL, "-");
         addr = token;
         printf("Address received from peer: %s \n", token);
@@ -245,7 +248,6 @@ static void *fault_handler_thread(void *arg) {
     }
 
     for (;;) {
-
         struct pollfd pollfd;
         int nready;
 
