@@ -41,7 +41,9 @@ void printPageContents(const char *addr, unsigned long num_pages, int request_pa
     char page_output[page_size + 1];
     for (int i = ((request_page == -1) ? 0 : request_page);
          i <= ((request_page == -1) ? (num_pages - 1) : request_page); ++i) {
+        printf("atak gyaa1\n");
         sprintf(page_output, "%s", addr + (i * page_size));
+        printf("atak gyaa2\n");
         printf(" [*] Page %d: \n%s\n", i, page_output);
     }
 }
@@ -60,8 +62,17 @@ void updatePageContents(char *addr, int request_page, unsigned long num_pages, c
 }
 
 void checkWithPeer(const char *message) {
-    // snprintf(buffer, BUFF_SIZE, "%lu-%p", len, addr);
     send(remote_socket, message, strlen(message), 0);
+    char buffer[BUFF_SIZE];
+    int bytesRead = 0;
+        memset(buffer, '\0', BUFF_SIZE);
+        bytesRead = read(remote_socket, buffer, 1024);
+        if (bytesRead < 0) {
+            perror("Error in reading");
+            exit(EXIT_FAILURE);
+        } else if (bytesRead > 0) {
+            printf("%s\n", buffer);    
+        }
 }
 
 void fillWithInvalid(enum status * msiArray) {
@@ -284,13 +295,15 @@ static void *responder(void *arg) {
     char buffer[BUFF_SIZE];
     int bytesRead = 0;
     for (;;) {
-        memset(buffer, '\0',BUFF_SIZE);
+        memset(buffer, '\0', BUFF_SIZE);
         bytesRead = read(new_socket, buffer, 1024);
         if (bytesRead < 0) {
             perror("Error in reading");
             exit(EXIT_FAILURE);
         } else if (bytesRead > 0) {
-            printf("%s\n", buffer);    
+            printf("%s\n", buffer);
+            char message[] =  "Wapas ho rhaa";    
+            send(new_socket, message, strlen(message), 0);
         } 
     }
 }
