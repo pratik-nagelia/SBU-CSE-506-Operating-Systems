@@ -33,7 +33,7 @@ static void *fault_handler_thread(void *arg);
 static int page_size;
 
 void printPageContents(const char *addr, unsigned long num_pages, int request_page) {
-    char page_output[page_size];
+    char page_output[page_size + 1];
     for (int i = ((request_page == -1) ? 0 : request_page);
          i <= ((request_page == -1) ? (num_pages - 1) : request_page); ++i) {
         sprintf(page_output, "%s", addr + (i * page_size));
