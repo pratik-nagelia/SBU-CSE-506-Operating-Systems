@@ -43,10 +43,10 @@ static int page_size, new_socket, remote_socket;
 static unsigned long num_pages;
 static enum state msi_array[100];
 
-char * fetchPageFromPeer(int j) {
+char * communicateWithPeer(int request_page, int operation) {
     char message[page_size];
     char * ret;
-    sprintf(message, "%d-%d", j , readOp);
+    sprintf(message, "%d-%d", request_page , operation);
     send(remote_socket, message, strlen(message), 0);
     int bytesRead = 0;
     memset(message, '\0', page_size);
@@ -75,11 +75,11 @@ void printPageContents(char *addr, int request_page) {
                 break;
             case i:
                 printf("State of page is i. Fetching from remote\n");
-                message = fetchPageFromPeer(j);
+                message = communicateWithPeer(j, readOp);
                 printf("Received message from remote: %s\n", message);
                 if(strcmp("NULL", message)!=0) {
                     updatePageContents(addr, j, message, false);
-                    msi_array[j] = s; 
+                    msi_array[j] = s;
                 } else {
                     char resp[] = "";
                     message = resp;
@@ -88,21 +88,6 @@ void printPageContents(char *addr, int request_page) {
                 break;
         }
         printf(" [*] Page %d:\n%s\n", j, page_output);
-    }
-}
-
-void communicateWithPeer(int request_page, int operation) {
-    char message[page_size];
-    snprintf(message, page_size, "%d-%d", request_page, operation);
-    send(remote_socket, message, strlen(message), 0);
-
-    char buffer[BUFF_SIZE];
-    int bytesRead = 0;
-    memset(buffer, '\0', BUFF_SIZE);
-    bytesRead = read(remote_socket, buffer, 1024);
-    if (bytesRead < 0) {
-        perror("Error in reading");
-        exit(EXIT_FAILURE);
     }
 }
 
@@ -132,21 +117,6 @@ void updatePageContents(char *addr, int request_page, const char *message, bool 
         }
     }
 }
-
-
-// void checkWithPeer(const char *message) {
-//     send(remote_socket, message, strlen(message), 0);
-//     char buffer[BUFF_SIZE];
-//     int bytesRead = 0;
-//     memset(buffer, '\0', BUFF_SIZE);
-//     bytesRead = read(remote_socket, buffer, 1024);
-//     if (bytesRead < 0) {
-//         perror("Error in reading");
-//         exit(EXIT_FAILURE);
-//     } else if (bytesRead > 0) {
-//         printf("%s\n", buffer);
-//     }
-// }
 
 void fillWithInvalid(enum state * msiArray) {
     for (int j = 0; j <= num_pages; ++j) {
