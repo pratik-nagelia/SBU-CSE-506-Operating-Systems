@@ -20,27 +20,33 @@
 #include <sys/ioctl.h>
 #include <poll.h>
 #include <pthread.h>
+#include <stdbool.h>
 
 #define BUFF_SIZE 4096
 
 #define errExit(msg)    do { perror(msg); exit(EXIT_FAILURE);    \
     } while (0)
-enum status {m, s, i};
+enum state {m, s, i};
 
 static inline void ignore_return() {}
 
 static void *fault_handler_thread(void *arg);
 static void *responder(void *arg);
+void updatePageContents(char *addr, int request_page, const char *message, bool transition);
 
+static const int readOp = 1;
+static const int invalidateOp = 3;
+
+static char *baseAddr;
 
 static int page_size, new_socket, remote_socket;
 static unsigned long num_pages;
-static enum status msi_array[100];
+static enum state msi_array[100];
 
 char * fetchPageFromPeer(int j) {
     char message[page_size];
     char * ret;
-    sprintf(message, "%d", j );
+    sprintf(message, "%d-%d", j , readOp);
     send(remote_socket, message, strlen(message), 0);
     int bytesRead = 0;
     memset(message, '\0', page_size);
@@ -49,6 +55,7 @@ char * fetchPageFromPeer(int j) {
         perror("Error in reading");
         exit(EXIT_FAILURE);
     } else if (bytesRead == 0) {
+        printf("Read 0 bytes \n");
         message[0] = '\0';
     }
     printf("Received response from remote %s\n", message);
@@ -56,11 +63,11 @@ char * fetchPageFromPeer(int j) {
     return ret;
 }
 
-void printPageContents(const char *addr, int request_page) {
+void printPageContents(char *addr, int request_page) {
     char page_output[page_size + 1];
     char * message;
     for (int j = ((request_page == -1) ? 0 : request_page); j <= ((request_page == -1) ? (num_pages - 1) : request_page); ++j) {
-        enum status page_state = msi_array[j];
+        enum state page_state = msi_array[j];
         switch (page_state) {
             case m:
             case s:
@@ -70,6 +77,13 @@ void printPageContents(const char *addr, int request_page) {
                 printf("State of page is i. Fetching from remote\n");
                 message = fetchPageFromPeer(j);
                 printf("Received message from remote: %s\n", message);
+                if(strcmp("NULL", message)!=0) {
+                    updatePageContents(addr, j, message, false);
+                    msi_array[j] = s; 
+                } else {
+                    char resp[] = "";
+                    message = resp;
+                }
                 sprintf(page_output, "%s", message);
                 break;
         }
@@ -77,20 +91,11 @@ void printPageContents(const char *addr, int request_page) {
     }
 }
 
-void updatePageContents(char *addr, int request_page, unsigned long num_pages, const char *message) {
-    int l;
-    for (int i = ((request_page == -1) ? 0 : request_page);
-         i <= ((request_page == -1) ? num_pages - 1 : request_page); ++i) {
-        l = 0x0 + (i * page_size);
-        for (int j = 0; message[j] != '\0'; ++j) {
-            addr[l++] = message[j];
-        }
-        addr[l] = '\0';
-    }
-}
-
-void checkWithPeer(const char *message) {
+void communicateWithPeer(int request_page, int operation) {
+    char message[page_size];
+    snprintf(message, page_size, "%d-%d", request_page, operation);
     send(remote_socket, message, strlen(message), 0);
+
     char buffer[BUFF_SIZE];
     int bytesRead = 0;
     memset(buffer, '\0', BUFF_SIZE);
@@ -98,18 +103,58 @@ void checkWithPeer(const char *message) {
     if (bytesRead < 0) {
         perror("Error in reading");
         exit(EXIT_FAILURE);
-    } else if (bytesRead > 0) {
-        printf("%s\n", buffer);
     }
 }
 
-void fillWithInvalid(enum status * msiArray) {
+void transitionStateOnWrite(int request_page) {
+    enum state page_status = msi_array[request_page];
+    switch (page_status) {
+        case m:
+        case s:
+        case i:
+            msi_array[request_page] = m;
+            printf("Write %d : Status changed to M, Invalidated Peer cache \n", request_page);
+            communicateWithPeer(request_page, invalidateOp);
+            break;
+    }
+}
+
+void updatePageContents(char *addr, int request_page, const char *message, bool transition) {
+    int l;
+    for (int i = ((request_page == -1) ? 0 : request_page); i <= ((request_page == -1) ? num_pages - 1 : request_page); ++i) {
+        l = 0x0 + (i * page_size);
+        for (int j = 0; message[j] != '\0'; ++j) {
+            addr[l++] = message[j];
+        }
+        addr[l] = '\0';
+        if (transition) {
+            transitionStateOnWrite(i);
+        }
+    }
+}
+
+
+// void checkWithPeer(const char *message) {
+//     send(remote_socket, message, strlen(message), 0);
+//     char buffer[BUFF_SIZE];
+//     int bytesRead = 0;
+//     memset(buffer, '\0', BUFF_SIZE);
+//     bytesRead = read(remote_socket, buffer, 1024);
+//     if (bytesRead < 0) {
+//         perror("Error in reading");
+//         exit(EXIT_FAILURE);
+//     } else if (bytesRead > 0) {
+//         printf("%s\n", buffer);
+//     }
+// }
+
+void fillWithInvalid(enum state * msiArray) {
     for (int j = 0; j <= num_pages; ++j) {
         msiArray[j] = i;
     }
 }
 
-char getMSItype(enum status value) {
+char getMSItype(enum state value) {
     switch (value) {
         case m: return 'M';
         case s: return 'S';
@@ -118,7 +163,7 @@ char getMSItype(enum status value) {
     }
 }
 
-void printMsiArray(enum status * msiArray) {
+void printMsiArray(enum state * msiArray) {
     for (int j = 0; j < num_pages; ++j) {
         printf(" [*] Page %d : %c \n", j, getMSItype(msiArray[j]));
     }
@@ -131,8 +176,14 @@ int main(int argc, char *argv[]) {
     int addrlen = sizeof(local_addr);
     char buffer[BUFF_SIZE] = {0};
     char *addr;
-
     unsigned long local_port, remote_port, len = 0;
+
+
+    // char m[] = "";
+    // char * ret = m;
+    // sprintf(buffer, "%s", ret);
+    // printf("%s\n", buffer);
+
 
     /* Handling Input ports */
     if (argc != 3) {
@@ -244,6 +295,7 @@ int main(int argc, char *argv[]) {
         }
 
     }
+    baseAddr = addr;
 
     /* Assignment 3 Part 2 Starts from here */
 
@@ -279,10 +331,9 @@ int main(int argc, char *argv[]) {
     }
 
 
+    fillWithInvalid(msi_array);
 
     pthread_t resp;
-
-    fillWithInvalid(msi_array);
     thread_ret = pthread_create(&resp, NULL, responder, (void *) uffd);
     if (thread_ret != 0) {
         errno = thread_ret;
@@ -292,22 +343,23 @@ int main(int argc, char *argv[]) {
 
     /* Starting user for operations */
     do {
-        printf("> Which command should I run? (r:read, w:write, , v:view msi array): ");
+        printf("> Which command should I run? (r:read, w:write, v:view msi array): ");
         ignore_return(scanf(" %c", &mode));
         printf("\n> For which page? (0-%lu, or -1 for all): ", num_pages - 1);
         ignore_return(scanf(" %d", &request_page));
 
         if (mode == 'r') {
             printPageContents(addr, request_page);
+
         } else if (mode == 'w') {
             printf("> Type your new message: \n");
             ignore_return(scanf(" %[^\n]", message));
             if (strlen(message) > page_size) {
                 printf("The length of message exceeds page size. The message will be truncated \n");
             }
-            updatePageContents(addr, request_page, num_pages, message);
-            checkWithPeer(message);
-            printPageContents(addr, request_page);
+            updatePageContents(addr, request_page, message, true);
+            // printPageContents(addr, request_page);
+
         } else if (mode == 'v') {
             printMsiArray(msi_array);
         } else {
@@ -318,20 +370,27 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-
-static char *getResponse(unsigned long page) {
-    char message[page_size];
-    char * ret;
-    enum status page_status = msi_array[page];
+static void transitionStateOnRead(int request_page) {
+    enum state page_status = msi_array[request_page];
     switch (page_status) {
         case m:
-        case s:
+            msi_array[request_page] = s;
             break;
+        case s:
         case i:
-            printf("The state of page is in i\n");
-            // message[0] = '\0';
-            // ret = message;
-            return "yo";
+            break;
+    }
+}
+
+static char *getResponse(int page) {
+    enum state page_status = msi_array[page];
+    switch (page_status) {
+        case m:
+            msi_array[page] = s;
+        case s:
+            return (baseAddr + (page * page_size));
+        case i:
+            return "NULL";
     }
     return '\0';
 }
@@ -345,15 +404,28 @@ static void *responder(void *arg) {
         if (bytesRead < 0) {
             perror("Error in reading");
             exit(EXIT_FAILURE);
+
         } else if (bytesRead > 0) {
-//            char message[] =  "Wapas ho rhaa";
-//            send(new_socket, message, strlen(message), 0);
-            printf("Received request : \n");
+            printf("\nReceived request :");
             printf("%s\n", buffer);
-            unsigned long request_page = strtoul(buffer, NULL, 0);
-            char * m = getResponse(request_page);
             char message[page_size];
-            snprintf(message, page_size, "%s", m);
+
+            char *token;
+            token = strtok(buffer, "-");
+            int request_page = atoi(token);
+            token = strtok(NULL, "-");
+            int operation = atoi(token);
+            printf("Received Page Number: %d , Operation: %d \n", request_page, operation);
+            if (operation == invalidateOp) {
+                msi_array[request_page] = i;
+                snprintf(message, page_size, "0");
+
+            } else if (operation == readOp) {
+                char * m = getResponse(request_page);
+                transitionStateOnRead(request_page);
+                snprintf(message, page_size, "%s", m);
+
+            }
             printf("Responding with : %s\n", message);
             send(new_socket, message, strlen(message), 0);
         }
