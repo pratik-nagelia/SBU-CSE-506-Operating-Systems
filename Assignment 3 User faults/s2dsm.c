@@ -35,7 +35,7 @@ static void *responder(void *arg);
 void updatePageContents(char *addr, int request_page, const char *message, bool transition);
 
 static const int readOp = 1;
-static const int invalidateOp = 3;
+static const int invalidateOp = 2;
 
 static char *baseAddr;
 
@@ -58,12 +58,11 @@ char * communicateWithPeer(int request_page, int operation) {
         printf("Read 0 bytes \n");
         message[0] = '\0';
     }
-    printf("Received response from remote %s\n", message);
     ret = message;
     return ret;
 }
 
-void printPageContents(char *addr, int request_page) {
+void printPageContents(char *addr, int request_page, bool fetch) {
     char page_output[page_size + 1];
     char * message;
     for (int j = ((request_page == -1) ? 0 : request_page); j <= ((request_page == -1) ? (num_pages - 1) : request_page); ++j) {
@@ -74,16 +73,17 @@ void printPageContents(char *addr, int request_page) {
                 sprintf(page_output, "%s", addr + (j * page_size));
                 break;
             case i:
-                printf("State of page is i. Fetching from remote\n");
-                message = communicateWithPeer(j, readOp);
-                printf("Received message from remote: %s\n", message);
-                if(strcmp("NULL", message)!=0) {
-                    updatePageContents(addr, j, message, false);
-                    msi_array[j] = s;
-                } else {
-                    char resp[] = "";
-                    message = resp;
-                }
+                printf("[INFO]: State of page is I. Fetching from remote\n");
+                char resp[] = "";
+                if(fetch) {
+                    message = communicateWithPeer(j, readOp);
+                    if(strcmp("NULL", message)!=0) {
+                        updatePageContents(addr, j, message, false);
+                        msi_array[j] = s;
+                    } else {
+                        message = resp;
+                    }
+                } else message = resp;
                 sprintf(page_output, "%s", message);
                 break;
         }
@@ -98,7 +98,7 @@ void transitionStateOnWrite(int request_page) {
         case s:
         case i:
             msi_array[request_page] = m;
-            printf("Write %d : Status changed to M, Invalidated Peer cache \n", request_page);
+            printf("[INFO]: Write to %d, Status changed to M, Invalidated Peer cache \n", request_page);
             communicateWithPeer(request_page, invalidateOp);
             break;
     }
@@ -147,13 +147,6 @@ int main(int argc, char *argv[]) {
     char buffer[BUFF_SIZE] = {0};
     char *addr;
     unsigned long local_port, remote_port, len = 0;
-
-
-    // char m[] = "";
-    // char * ret = m;
-    // sprintf(buffer, "%s", ret);
-    // printf("%s\n", buffer);
-
 
     /* Handling Input ports */
     if (argc != 3) {
@@ -251,14 +244,14 @@ int main(int argc, char *argv[]) {
         char *token;
         token = strtok(buffer, "-");
         len = strtoul(token, NULL, 0);
-        printf("Memory length received from peer %lu\n", len);
+        printf("[INFO]: Memory length received from peer %lu\n", len);
         num_pages = len / page_size;
         token = strtok(NULL, "-");
         addr = token;
-        printf("Address received from peer: %s \n", token);
+        printf("[INFO]: Address received from peer: %s \n", token);
         sscanf(token, "%p", &addr);
         addr = mmap(addr, len, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
-        printf("Address returned by mmap(): %p \n\n", addr);
+        printf("[INFO]: Address returned by mmap(): %p \n\n", addr);
 
         if (addr == MAP_FAILED) {
             errExit("error in address allocation in mmap ");
@@ -315,11 +308,13 @@ int main(int argc, char *argv[]) {
     do {
         printf("> Which command should I run? (r:read, w:write, v:view msi array): ");
         ignore_return(scanf(" %c", &mode));
-        printf("\n> For which page? (0-%lu, or -1 for all): ", num_pages - 1);
-        ignore_return(scanf(" %d", &request_page));
+        if (mode != 'v') {
+            printf("\n> For which page? (0-%lu, or -1 for all): ", num_pages - 1);
+            ignore_return(scanf(" %d", &request_page));
+        }
 
         if (mode == 'r') {
-            printPageContents(addr, request_page);
+            printPageContents(addr, request_page, true);
 
         } else if (mode == 'w') {
             printf("> Type your new message: \n");
@@ -328,7 +323,7 @@ int main(int argc, char *argv[]) {
                 printf("The length of message exceeds page size. The message will be truncated \n");
             }
             updatePageContents(addr, request_page, message, true);
-            // printPageContents(addr, request_page);
+            printPageContents(addr, request_page, false);
 
         } else if (mode == 'v') {
             printMsiArray(msi_array);
@@ -376,8 +371,6 @@ static void *responder(void *arg) {
             exit(EXIT_FAILURE);
 
         } else if (bytesRead > 0) {
-            printf("\nReceived request :");
-            printf("%s\n", buffer);
             char message[page_size];
 
             char *token;
@@ -385,10 +378,14 @@ static void *responder(void *arg) {
             int request_page = atoi(token);
             token = strtok(NULL, "-");
             int operation = atoi(token);
-            printf("Received Page Number: %d , Operation: %d \n", request_page, operation);
+            printf("\n[INFO]: Received Request for Page: %d , Operation(1:Read, 2:Invalidate): %d \n", request_page, operation);
             if (operation == invalidateOp) {
                 msi_array[request_page] = i;
-                snprintf(message, page_size, "0");
+                char * page_addr = baseAddr + (request_page * page_size);
+                if (madvise(page_addr, page_size, MADV_DONTNEED)) {
+                    errExit("Fail to madvise");
+                }
+                snprintf(message, page_size, "Success");
 
             } else if (operation == readOp) {
                 char * m = getResponse(request_page);
@@ -396,7 +393,7 @@ static void *responder(void *arg) {
                 snprintf(message, page_size, "%s", m);
 
             }
-            printf("Responding with : %s\n", message);
+            printf("[INFO]: Responding with : %s\n", message);
             send(new_socket, message, strlen(message), 0);
         }
     }
