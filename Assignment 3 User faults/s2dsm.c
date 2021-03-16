@@ -66,11 +66,12 @@ void printPageContents(char *addr, int request_page, bool fetch) {
     char page_output[page_size + 1];
     char * message;
     for (int j = ((request_page == -1) ? 0 : request_page); j <= ((request_page == -1) ? (num_pages - 1) : request_page); ++j) {
+        sprintf(page_output, "%s", addr + (j * page_size));
         enum state page_state = msi_array[j];
         switch (page_state) {
             case m:
             case s:
-                sprintf(page_output, "%s", addr + (j * page_size));
+                // sprintf(page_output, "%s", addr + (j * page_size));
                 break;
             case i:
                 printf("[INFO]: State of page is I. Fetching from remote\n");
@@ -98,7 +99,7 @@ void transitionStateOnWrite(int request_page) {
         case s:
         case i:
             msi_array[request_page] = m;
-            printf("[INFO]: Write to %d, Status changed to M, Invalidated Peer cache \n", request_page);
+            printf("[INFO]: Writing to Page %d, Status changed to M, Invalidated Peer cache \n", request_page);
             communicateWithPeer(request_page, invalidateOp);
             break;
     }
@@ -295,7 +296,6 @@ int main(int argc, char *argv[]) {
 
 
     fillWithInvalid(msi_array);
-
     pthread_t resp;
     thread_ret = pthread_create(&resp, NULL, responder, (void *) uffd);
     if (thread_ret != 0) {
@@ -379,6 +379,7 @@ static void *responder(void *arg) {
             token = strtok(NULL, "-");
             int operation = atoi(token);
             printf("\n[INFO]: Received Request for Page: %d , Operation(1:Read, 2:Invalidate): %d \n", request_page, operation);
+            enum state initialState = msi_array[request_page];
             if (operation == invalidateOp) {
                 msi_array[request_page] = i;
                 char * page_addr = baseAddr + (request_page * page_size);
@@ -393,7 +394,7 @@ static void *responder(void *arg) {
                 snprintf(message, page_size, "%s", m);
 
             }
-            printf("[INFO]: Responding with : %s\n", message);
+            printf("[INFO]: Page State was: %c . Now responding with : %s\n", getMSItype(initialState) ,message);
             send(new_socket, message, strlen(message), 0);
         }
     }
