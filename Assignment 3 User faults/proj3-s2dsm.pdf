@@ -1,0 +1,2734 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.geeksforgeeks.org/socket-programming-cc/)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 440.7736 221.2929 452.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.cs.cmu.edu/afs/cs/academic/class/15492-f07/www/pthreads.html)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 422.7736 228.5229 434.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://man7.org/linux/man-pages/man2/userfaultfd.2.html)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 404.7736 132.3829 416.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://en.wikipedia.org/wiki/MSI_protocol)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 386.7736 141.8229 398.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R ] /Contents 34 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 33 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+10 0 obj
+<<
+/Contents 35 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 33 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+11 0 obj
+<<
+/Contents 36 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 33 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://en.wikipedia.org/wiki/MSI_protocol)
+>> /Border [ 0 0 0 ] /Rect [ 422.5829 570.0236 532.5827 582.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+13 0 obj
+<<
+/Annots [ 12 0 R ] /Contents 37 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 33 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+14 0 obj
+<<
+/Contents 38 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 33 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+15 0 obj
+<<
+/Outlines 17 0 R /PageLabels 39 0 R /PageMode /UseNone /Pages 33 0 R /Type /Catalog
+>>
+endobj
+16 0 obj
+<<
+/Author () /CreationDate (D:20210307105356+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20210307105356+05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Project 3: s2dsm \(Super Simple Distributed Shared Memory\) Version 2) /Trapped /False
+>>
+endobj
+17 0 obj
+<<
+/Count 18 /First 18 0 R /Last 29 0 R /Type /Outlines
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 9 0 R /XYZ 62.69291 587.0236 0 ] /Next 19 0 R /Parent 17 0 R /Title (Introduction)
+>>
+endobj
+19 0 obj
+<<
+/Dest [ 9 0 R /XYZ 62.69291 488.0236 0 ] /Next 20 0 R /Parent 17 0 R /Prev 18 0 R /Title (Recommended Background Reading)
+>>
+endobj
+20 0 obj
+<<
+/Count 4 /Dest [ 9 0 R /XYZ 62.69291 377.0236 0 ] /First 21 0 R /Last 24 0 R /Next 25 0 R /Parent 17 0 R 
+  /Prev 19 0 R /Title (=== Part 1 ===)
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 9 0 R /XYZ 62.69291 344.0236 0 ] /Next 22 0 R /Parent 20 0 R /Title (P1.1: Understanding userfaultfd demo source code and output)
+>>
+endobj
+22 0 obj
+<<
+/Dest [ 10 0 R /XYZ 62.69291 715.8236 0 ] /Next 23 0 R /Parent 20 0 R /Prev 21 0 R /Title (P1.2: Pairing memorey regions between two systems)
+>>
+endobj
+23 0 obj
+<<
+/Dest [ 10 0 R /XYZ 62.69291 403.8236 0 ] /Next 24 0 R /Parent 20 0 R /Prev 22 0 R /Title (P1.3: Test your code so far)
+>>
+endobj
+24 0 obj
+<<
+/Dest [ 10 0 R /XYZ 62.69291 295.8236 0 ] /Parent 20 0 R /Prev 23 0 R /Title (Submission)
+>>
+endobj
+25 0 obj
+<<
+/Count 3 /Dest [ 11 0 R /XYZ 62.69291 765.0236 0 ] /First 26 0 R /Last 28 0 R /Next 29 0 R /Parent 17 0 R 
+  /Prev 20 0 R /Title (=== Part 2 ===)
+>>
+endobj
+26 0 obj
+<<
+/Dest [ 11 0 R /XYZ 62.69291 732.0236 0 ] /Next 27 0 R /Parent 25 0 R /Title (P2.1: Implement userfaultfd)
+>>
+endobj
+27 0 obj
+<<
+/Dest [ 11 0 R /XYZ 62.69291 480.0236 0 ] /Next 28 0 R /Parent 25 0 R /Prev 26 0 R /Title (P2.2: Test your code so far)
+>>
+endobj
+28 0 obj
+<<
+/Dest [ 11 0 R /XYZ 62.69291 288.0236 0 ] /Parent 25 0 R /Prev 27 0 R /Title (Submission)
+>>
+endobj
+29 0 obj
+<<
+/Count 3 /Dest [ 13 0 R /XYZ 62.69291 765.0236 0 ] /First 30 0 R /Last 32 0 R /Parent 17 0 R /Prev 25 0 R 
+  /Title (=== Part 3 ===)
+>>
+endobj
+30 0 obj
+<<
+/Dest [ 13 0 R /XYZ 62.69291 732.0236 0 ] /Next 31 0 R /Parent 29 0 R /Title (P3.1: Implement MSI page coherence protocol)
+>>
+endobj
+31 0 obj
+<<
+/Dest [ 13 0 R /XYZ 62.69291 159.0236 0 ] /Next 32 0 R /Parent 29 0 R /Prev 30 0 R /Title (P3.2: Test your code)
+>>
+endobj
+32 0 obj
+<<
+/Dest [ 14 0 R /XYZ 62.69291 453.0236 0 ] /Parent 29 0 R /Prev 31 0 R /Title (Submission)
+>>
+endobj
+33 0 obj
+<<
+/Count 5 /Kids [ 9 0 R 10 0 R 11 0 R 13 0 R 14 0 R ] /Type /Pages
+>>
+endobj
+34 0 obj
+<<
+/Length 7307
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 717.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 28 Tm /F2 20 Tf 24 TL 29.33488 0 Td (Project 3: s2dsm \(Super Simple Distributed) Tj T* 79.46 0 Td (Shared Memory\) Version 2) Tj T* -108.7949 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 701.0236 cm
+Q
+q
+1 0 0 1 62.69291 701.0236 cm
+Q
+q
+1 0 0 1 62.69291 689.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Handed out:) Tj /F1 10 Tf ( Tue Feb 23, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 683.0236 cm
+Q
+q
+1 0 0 1 62.69291 671.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Modified:) Tj /F1 10 Tf ( Sun Mar 7, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 665.0236 cm
+Q
+q
+1 0 0 1 62.69291 599.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Due dates) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 45 cm
+Q
+q
+1 0 0 1 23 45 cm
+Q
+q
+1 0 0 1 23 33 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Part 1: Friday, March 05, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Part 2: Friday, March 12, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Part 3: Friday, March 19, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 599.0236 cm
+Q
+q
+1 0 0 1 62.69291 566.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 500.0236 cm
+q
+.960784 .960784 .862745 rg
+n 185.3785 48 30 12 re f*
+.960784 .960784 .862745 rg
+n 204.1899 36 66 12 re f*
+.960784 .960784 .862745 rg
+n 358.5131 36 30 12 re f*
+.960784 .960784 .862745 rg
+n 206.6439 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 274.4336 12 30 12 re f*
+BT 1 0 0 1 0 50 Tm 1.427318 Tw 12 TL /F1 10 Tf 0 0 0 rg (The goal of this project is to implement ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf (, a distributed shared memory \(user-level\) program that) Tj T* 0 Tw 1.238314 Tw (supports a page-granule MSI protocol using ) Tj /F3 10 Tf (userfaultfd) Tj /F1 10 Tf (. Two instances of ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( will communicate) Tj T* 0 Tw .720651 Tw (their page information using sockets. Though ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( may run on different machines to support a \(truely\)) Tj T* 0 Tw 1.82436 Tw (distributed shared memory, in this project, we will run two ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( processes on a single machine for) Tj T* 0 Tw (simplicity. This project consists of three parts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 467.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Recommended Background Reading) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 455.0236 cm
+Q
+q
+1 0 0 1 62.69291 455.0236 cm
+Q
+q
+1 0 0 1 62.69291 443.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Socket Programming in C/C++) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 437.0236 cm
+Q
+q
+1 0 0 1 62.69291 425.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (POSIX thread \(pthread\) libraries) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 419.0236 cm
+Q
+q
+1 0 0 1 62.69291 407.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (userfaultfd) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 401.0236 cm
+Q
+q
+1 0 0 1 62.69291 389.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (MSI protocol) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 389.0236 cm
+Q
+q
+1 0 0 1 62.69291 356.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (=== Part 1 ===) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 326.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P1.1: Understanding userfaultfd demo source code and output) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 296.0236 cm
+q
+.960784 .960784 .862745 rg
+n 182.1076 12 66 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 66 12 re f*
+BT 1 0 0 1 0 14 Tm 2.464597 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] The attached source code ) Tj /F3 10 Tf (uffd.tar.gz) Tj /F1 10 Tf ( is a simple application that demonstrates how) Tj T* 0 Tw /F3 10 Tf (userfaultfd) Tj /F1 10 Tf ( can be used to handle page faults at the user level. It contains two files shown below.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 226.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 60 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 38 Tm /F3 10 Tf 12 TL ($  tar xzvf uffd.tar.gz uffd/) Tj T* (uffd/) Tj T* (uffd/Makefile) Tj T* (uffd/uffd.c) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 182.8236 cm
+q
+.960784 .960784 .862745 rg
+n 287.36 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 323.36 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 329.36 0 6 12 re f*
+BT 1 0 0 1 0 26 Tm 1.717984 Tw 12 TL /F1 10 Tf 0 0 0 rg (Carefully read, compile and execute uffd.c file to understand how userfaultfd can be used to manage) Tj T* 0 Tw 1.60152 Tw (paging. Once you completely understand uffd.c, add comments of each line \(H1-H10, M1-M7, U1-U7\)) Tj T* 0 Tw (explaining what the line means. For U1-U7, explain the output of ) Tj /F3 10 Tf (./uffd) Tj ( ) Tj (1) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 152.8236 cm
+q
+.960784 .960784 .862745 rg
+n 50.57 0 120 12 re f*
+BT 1 0 0 1 0 14 Tm 1.69284 Tw 12 TL /F1 10 Tf 0 0 0 rg (If you see the error message "userfaultfd Function not implemented", then you should recompile your) Tj T* 0 Tw (kernel with ) Tj /F3 10 Tf (CONFIG_USERFAULTFD=y) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 134.8236 cm
+q
+.960784 .960784 .862745 rg
+n 140.06 0 66 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Create a gzip-ed tarball named ) Tj /F3 10 Tf (uffd.tar.gz) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 89.62362 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 36 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL ($  tar czvf uffd.tar.gz uffd/) Tj T* (uffd/) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+35 0 obj
+<<
+/Length 9397
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 727.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 36 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F3 10 Tf 12 TL (uffd/Makefile) Tj T* (uffd/uffd.c) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 697.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P1.2: Pairing memorey regions between two systems) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 631.8236 cm
+q
+.960784 .960784 .862745 rg
+n 231.1446 48 30 12 re f*
+.960784 .960784 .862745 rg
+n 172.0113 36 30 12 re f*
+.960784 .960784 .862745 rg
+n 36.99598 24 42 12 re f*
+.960784 .960784 .862745 rg
+n 78.99598 24 6.865984 12 re f*
+.960784 .960784 .862745 rg
+n 85.86197 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 109.862 24 6.865984 12 re f*
+.960784 .960784 .862745 rg
+n 116.728 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 164.6999 24 42 12 re f*
+.960784 .960784 .862745 rg
+n 206.6999 24 6.865984 12 re f*
+.960784 .960784 .862745 rg
+n 213.5659 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 237.5659 24 6.865984 12 re f*
+.960784 .960784 .862745 rg
+n 244.4319 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 30 12 re f*
+BT 1 0 0 1 0 50 Tm .863516 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] Create a \(user-land\) application named ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( that takes as input a local port number and a) Tj T* 0 Tw .138555 Tw (remote port number. Two instances of ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( communicates each other over sockets. For example, when) Tj T* 0 Tw .865984 Tw (running ) Tj /F3 10 Tf (./s2dsm) Tj ( ) Tj (5000) Tj ( ) Tj (6000) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (./s2dsm) Tj ( ) Tj (6000) Tj ( ) Tj (5000) Tj /F1 10 Tf (, two processes pair up each other. The first) Tj T* 0 Tw .20881 Tw /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( process listens on the port 5000 and send messages to the port 6000. The second process listens) Tj T* 0 Tw (on the port 6000 and send messages to the port 5000.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 613.8236 cm
+q
+.960784 .960784 .862745 rg
+n 95.04 0 30 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (After pairing, the first ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( process:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 607.8236 cm
+Q
+q
+1 0 0 1 62.69291 607.8236 cm
+Q
+q
+1 0 0 1 62.69291 583.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm -0.084749 Tw 12 TL /F1 10 Tf 0 0 0 rg (asks a user to specify the number of pages to allocate through stdin: e.g., " > How many pages would) Tj T* 0 Tw (you like to allocate \(greater than 0\)?") Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 577.8236 cm
+Q
+q
+1 0 0 1 62.69291 565.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 217.3 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 223.3 0 18 12 re f*
+.960784 .960784 .862745 rg
+n 241.3 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 247.3 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 283.3 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 289.3 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 301.3 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 307.3 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 337.3 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 343.3 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 349.3 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 355.3 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 361.3 0 48 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (mmaps a memory region of the size specified by ) Tj /F3 10 Tf (<) Tj (the) Tj ( ) Tj (number) Tj ( ) Tj (of) Tj ( ) Tj (pages) Tj (>) Tj ( ) Tj (*) Tj ( ) Tj (PAGESIZE) Tj /F1 10 Tf (;) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 559.8236 cm
+Q
+q
+1 0 0 1 62.69291 547.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (printfs the address of the mmaped region \(the return value of mmap\) and the mmapped size; and) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 541.8236 cm
+Q
+q
+1 0 0 1 62.69291 517.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.779318 Tw (sends a message including the mmaped address and size to the second process over a socket) Tj T* 0 Tw (communication.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 517.8236 cm
+Q
+q
+1 0 0 1 62.69291 499.8236 cm
+q
+.960784 .960784 .862745 rg
+n 55.03 0 30 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (The second ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( process:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 493.8236 cm
+Q
+q
+1 0 0 1 62.69291 493.8236 cm
+Q
+q
+1 0 0 1 62.69291 481.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (receives the message including the mmapped address and size from the first process;) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 475.8236 cm
+Q
+q
+1 0 0 1 62.69291 451.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .689398 Tw (mmaps a memory region of the same size to the same address \(by specifying the first argument of) Tj T* 0 Tw (mmap\); and) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 445.8236 cm
+Q
+q
+1 0 0 1 62.69291 433.8236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (printfs the address of the mmaped region and the mmapped size.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 433.8236 cm
+Q
+q
+1 0 0 1 62.69291 415.8236 cm
+q
+.960784 .960784 .862745 rg
+n 98.37 0 42 12 re f*
+.960784 .960784 .862745 rg
+n 193.18 0 48 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Program your code in ) Tj /F3 10 Tf (s2dsm.c) Tj /F1 10 Tf ( and create ) Tj /F3 10 Tf (Makefile) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 385.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P1.3: Test your code so far) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 307.8236 cm
+q
+.960784 .960784 .862745 rg
+n 97.85642 48 30 12 re f*
+.960784 .960784 .862745 rg
+n 175.07 0 54 12 re f*
+BT 1 0 0 1 0 62 Tm -0.075802 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] Once you get this far, take a screenshot of the printfs for memory address and size for mmaped) Tj T* 0 Tw 1.814104 Tw (region of two paired ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( processes. To do this, you must use tmux to split the terminal vertically,) Tj T* 0 Tw .29311 Tw (left-side running the first process, followed by the right side running the second process. The first process) Tj T* 0 Tw .290488 Tw (will ask the user to input a number of pages it should mmap. It will then mmap first, and communicate the) Tj T* 0 Tw 1.831984 Tw (mmap information to the second application. You must show to printf of mmap information from both) Tj T* 0 Tw (applications. Name your screenshot as ) Tj /F3 10 Tf (s2dsm.png) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 277.8236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Submission) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 235.8236 cm
+q
+.960784 .960784 .862745 rg
+n 279.7305 24 66 12 re f*
+.960784 .960784 .862745 rg
+n 351.5569 24 48 12 re f*
+.960784 .960784 .862745 rg
+n 405.3834 24 42 12 re f*
+.960784 .960784 .862745 rg
+n 51.9807 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 357.0684 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 381.0684 12 6.290697 12 re f*
+.960784 .960784 .862745 rg
+n 387.3591 12 60 12 re f*
+BT 1 0 0 1 0 26 Tm .266412 Tw 12 TL /F1 10 Tf 0 0 0 rg (Make a folder named with your SBU ID \(e.g., 112233445\), put ) Tj /F3 10 Tf (uffd.tar.gz) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (Makefile) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (s2dsm.c) Tj /F1 10 Tf (, and) Tj T* 0 Tw .290697 Tw (screenshot ) Tj /F3 10 Tf (s2dsm.png) Tj /F1 10 Tf ( files in the folder, create a single gzip-ed tarball named ) Tj /F3 10 Tf ([SBU) Tj ( ) Tj (ID].tar.gz) Tj /F1 10 Tf (, and) Tj T* 0 Tw (turn the gzip-ed tarball to Blackboard.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 142.6236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 84 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 72 60 54 12 re f*
+.960784 .960784 .862745 rg
+n 174 60 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 48 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 36 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 54 12 re f*
+BT 1 0 0 1 0 62 Tm 12 TL /F3 10 Tf 0 0 0 rg ($  tar czvf ) Tj .4 .4 .4 rg (112233445) Tj 0 0 0 rg (.tar.gz ) Tj .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/Makefile) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/s2dsm.c) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/s2dsm.png) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/uffd.tar.gz) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 134.6236 cm
+Q
+ 
+endstream
+endobj
+36 0 obj
+<<
+/Length 9794
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 744.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (=== Part 2 ===) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 714.0236 cm
+q
+.960784 .960784 .862745 rg
+n 119.205 0 99 18 re f*
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P2.1: Implement ) Tj /F3 15 Tf (userfaultfd) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 684.0236 cm
+q
+.960784 .960784 .862745 rg
+n 20.56 0 66 12 re f*
+.960784 .960784 .862745 rg
+n 152.15 0 30 12 re f*
+BT 1 0 0 1 0 14 Tm .112927 Tw 12 TL /F1 10 Tf 0 0 0 rg ([20 points] Picking up from Part 1, once you have a mmapped memory region, register the memory region) Tj T* 0 Tw (with ) Tj /F3 10 Tf (userfaultfd) Tj /F1 10 Tf (. Once paired, ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( should repeatly ask a user for two inputs:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 678.0236 cm
+Q
+q
+1 0 0 1 62.69291 678.0236 cm
+Q
+q
+1 0 0 1 62.69291 666.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (" > Which command should I run? \(r:read, w:write\): ") Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 660.0236 cm
+Q
+q
+1 0 0 1 62.69291 648.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (" > For which page? \(0-%i, or -1 for all\): ") Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 648.0236 cm
+Q
+q
+1 0 0 1 62.69291 630.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (You will have to replace "%i" with the the number of pages specified by the user from Part 1.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 588.0236 cm
+q
+.960784 .960784 .862745 rg
+n 0 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 6 12 8.039983 12 re f*
+.960784 .960784 .862745 rg
+n 14.03998 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 32.03998 12 8.039983 12 re f*
+.960784 .960784 .862745 rg
+n 40.07997 12 72 12 re f*
+.960784 .960784 .862745 rg
+n 337.7698 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 343.7698 12 8.039983 12 re f*
+.960784 .960784 .862745 rg
+n 351.8098 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 369.8098 12 8.039983 12 re f*
+.960784 .960784 .862745 rg
+n 377.8498 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 401.8498 12 8.039983 12 re f*
+.960784 .960784 .862745 rg
+n 409.8898 12 60 12 re f*
+.960784 .960784 .862745 rg
+n 30.01 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 152.63 0 12 12 re f*
+BT 1 0 0 1 0 26 Tm .275777 Tw 12 TL /F1 10 Tf 0 0 0 rg (The r \(read\) command reads the contents in t he specified \(or all\) pages. When a page fault occurs, printf) Tj T* 0 Tw 2.039983 Tw /F3 10 Tf (") Tj ( ) Tj ([x]) Tj ( ) Tj (PAGEFAULT\\n") Tj /F1 10 Tf (. For each page, printf the contents as follows: ) Tj /F3 10 Tf (") Tj ( ) Tj ([*]) Tj ( ) Tj (Page) Tj ( ) Tj (%i:\\n%s\\n") Tj /F1 10 Tf  T* 0 Tw (where ) Tj /F3 10 Tf (%i) Tj /F1 10 Tf ( is the page number and ) Tj /F3 10 Tf (%s) Tj /F1 10 Tf ( is the page content.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 570.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (The w \(write\) command asks a user for the content to write on the specified \(or all\) pages:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 564.0236 cm
+Q
+q
+1 0 0 1 62.69291 564.0236 cm
+Q
+q
+1 0 0 1 62.69291 552.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (" > Type your new message: ") Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 552.0236 cm
+Q
+q
+1 0 0 1 62.69291 510.0236 cm
+q
+.960784 .960784 .862745 rg
+n 71.27843 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 77.27843 12 10.23921 12 re f*
+.960784 .960784 .862745 rg
+n 87.51764 12 100.2392 12 re f*
+.960784 .960784 .862745 rg
+n 401.4113 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 407.4113 12 10.23921 12 re f*
+.960784 .960784 .862745 rg
+n 417.6506 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 435.6506 12 10.23921 12 re f*
+.960784 .960784 .862745 rg
+n 445.8898 12 19.76079 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 60 12 re f*
+.960784 .960784 .862745 rg
+n 92.79 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 215.41 0 12 12 re f*
+BT 1 0 0 1 0 26 Tm 1.681098 Tw 12 TL /F1 10 Tf 0 0 0 rg (Write the new message into the specified \(or all\) page. Similar to the r command, when a page fault) Tj T* 0 Tw 4.239213 Tw (occurs, printf: ) Tj /F3 10 Tf (") Tj ( ) Tj ([x] PAGEFAULT\\n") Tj /F1 10 Tf (. Printf the \(updated\) contents as follows: ) Tj /F3 10 Tf (") Tj ( ) Tj ([*]) Tj ( ) Tj (Page) Tj T* 0 Tw (%i:\\n%s\\n") Tj /F1 10 Tf ( where ) Tj /F3 10 Tf (%i) Tj /F1 10 Tf ( is the page number and ) Tj /F3 10 Tf (%s) Tj /F1 10 Tf ( is the page content.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 492.0236 cm
+q
+.960784 .960784 .862745 rg
+n 98.37 0 42 12 re f*
+.960784 .960784 .862745 rg
+n 193.18 0 48 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Program your code in ) Tj /F3 10 Tf (s2dsm.c) Tj /F1 10 Tf ( and create ) Tj /F3 10 Tf (Makefile) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 462.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P2.2: Test your code so far) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 444.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL ([10 points] Take a screenshot of the outputs \(printfs\) when following the operation sequence below:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 438.0236 cm
+Q
+q
+1 0 0 1 62.69291 438.0236 cm
+Q
+q
+1 0 0 1 62.69291 426.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Pair the two application with 3 pages [0-2]) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 420.0236 cm
+Q
+q
+1 0 0 1 62.69291 408.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 reads page 0) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 402.0236 cm
+Q
+q
+1 0 0 1 62.69291 390.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 reads all pages) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 384.0236 cm
+Q
+q
+1 0 0 1 62.69291 372.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 writes "Hello Userfaultfd!" to page 2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 366.0236 cm
+Q
+q
+1 0 0 1 62.69291 354.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 reads all pages) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 348.0236 cm
+Q
+q
+1 0 0 1 62.69291 336.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 writes "Writing this to all pages!" to all pages) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 330.0236 cm
+Q
+q
+1 0 0 1 62.69291 318.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 reads all pages) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 318.0236 cm
+Q
+q
+1 0 0 1 62.69291 300.0236 cm
+q
+.960784 .960784 .862745 rg
+n 344.07 0 54 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (You only need to show the outputs of one process. Name your screenshot as ) Tj /F3 10 Tf (s2dsm.png) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 270.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Submission) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 228.0236 cm
+q
+.960784 .960784 .862745 rg
+n 295.3427 24 48 12 re f*
+.960784 .960784 .862745 rg
+n 350.5884 24 42 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 315.8745 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 339.8745 12 7.271318 12 re f*
+.960784 .960784 .862745 rg
+n 347.1458 12 60 12 re f*
+BT 1 0 0 1 0 26 Tm 1.685697 Tw 12 TL /F1 10 Tf 0 0 0 rg (Make a folder named with your SBU ID \(e.g., 112233445\), put ) Tj /F3 10 Tf (Makefile) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (s2dsm.c) Tj /F1 10 Tf (, and screenshot) Tj T* 0 Tw 1.271318 Tw /F3 10 Tf (s2dsm.png) Tj /F1 10 Tf ( files in the folder, create a single gzip-ed tarball named ) Tj /F3 10 Tf ([SBU) Tj ( ) Tj (ID].tar.gz) Tj /F1 10 Tf (, and turn the) Tj T* 0 Tw (gzip-ed tarball to Blackboard.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 146.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 72 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 72 48 54 12 re f*
+.960784 .960784 .862745 rg
+n 174 48 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 36 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 54 12 re f*
+BT 1 0 0 1 0 50 Tm 12 TL /F3 10 Tf 0 0 0 rg ($  tar czvf ) Tj .4 .4 .4 rg (112233445) Tj 0 0 0 rg (.tar.gz ) Tj .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/Makefile) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/s2dsm.c) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/s2dsm.png) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 138.8236 cm
+Q
+ 
+endstream
+endobj
+37 0 obj
+<<
+/Length 10261
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 744.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (=== Part 3 ===) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 714.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P3.1: Implement MSI page coherence protocol) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 672.0236 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 54 12 re f*
+BT 1 0 0 1 0 26 Tm 1.649431 Tw 12 TL /F1 10 Tf 0 0 0 rg ([80 points] Picking up from Part 2, you will implement the MSI protocol to ensure the coherence of a) Tj T* 0 Tw 2.241412 Tw (shared memory region between two processes. To do this, each process maintains an array, called) Tj T* 0 Tw /F3 10 Tf (msi_array) Tj /F1 10 Tf ( that keeps track of MSI information \(enum values: M, S, and I\) for each page.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 654.0236 cm
+q
+.960784 .960784 .862745 rg
+n 60.03 0 30 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Once paired, ) Tj /F3 10 Tf (s2dsm) Tj /F1 10 Tf ( should repeatly ask a user for two inputs:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 648.0236 cm
+Q
+q
+1 0 0 1 62.69291 648.0236 cm
+Q
+q
+1 0 0 1 62.69291 636.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (" > Which command should I run? \(r:read, w:write, v:view msi array\): ") Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 630.0236 cm
+Q
+q
+1 0 0 1 62.69291 618.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (" > For which page? \(0-%i, or -1 for all\): ") Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 618.0236 cm
+Q
+q
+1 0 0 1 62.69291 588.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .287608 Tw (You will have to replace "%i" with the the number of pages specified by the user from Part 1. The new "v") Tj T* 0 Tw (command will allow the user to view the contents of the MSI array.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 558.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .516651 Tw 12 TL /F1 10 Tf 0 0 0 rg (For the "r"ead and "w"rite commands, implement the MSI protocol as specified in ) Tj 0 0 .501961 rg (MSI protocol Wikipedia) Tj 0 0 0 rg  T* 0 Tw (Initially, all pages are in the invalid state \(I\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 540.0236 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 30 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 36 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 72 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 78 0 12 12 re f*
+.960784 .960784 .862745 rg
+n 90 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 96 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 126 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 132 0 12 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (Notes) Tj ( ) Tj (\(added) Tj ( ) Tj (on) Tj ( ) Tj (March) Tj ( ) Tj (7\)) Tj /F1 10 Tf (:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 534.0236 cm
+Q
+q
+1 0 0 1 62.69291 534.0236 cm
+Q
+q
+1 0 0 1 62.69291 369.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 150 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 150 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Initial read protocol \(Refer to the discussion @93 in Piazza\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 140 Tm  T* ET
+q
+1 0 0 1 20 144 cm
+Q
+q
+1 0 0 1 20 144 cm
+Q
+q
+1 0 0 1 20 132 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Given two processes A and B and page number 1:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 126 cm
+Q
+q
+1 0 0 1 20 114 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Initially, A1 \(A's page 1\) and B1 \(B's page 1\) are INVALID.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 108 cm
+Q
+q
+1 0 0 1 20 96 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Read \(A1\) will trigger a page fault \(as this is the first access\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 90 cm
+Q
+q
+1 0 0 1 20 78 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (A detects that A1 is in the INVALID state.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 72 cm
+Q
+q
+1 0 0 1 20 60 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (A attempts to fetch B1 from B.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 54 cm
+Q
+q
+1 0 0 1 20 30 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .195777 Tw (B informs A that B1 is also in the INVALID state \(if B1 is not INVALID, then B simply sends) Tj T* 0 Tw (back the page and updates the state accordingly\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 24 cm
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 2.751984 Tw (When A finds that B1 is also INVALID, then it printf null string: e.g., printf\("[*] Page) Tj T* 0 Tw (%d:n%sn",1,""\);) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 363.0236 cm
+Q
+q
+1 0 0 1 62.69291 222.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 126 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Invaidation protocol \(@91 in Piazza\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 116 Tm  T* ET
+q
+1 0 0 1 20 120 cm
+Q
+q
+1 0 0 1 20 120 cm
+Q
+q
+1 0 0 1 20 108 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Given two processes A and B and page number 1:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 102 cm
+Q
+q
+1 0 0 1 20 78 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 121.16 0 66 12 re f*
+.960784 .960784 .862745 rg
+n 187.16 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 193.16 0 60 12 re f*
+.960784 .960784 .862745 rg
+n 253.16 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 259.16 0 84 12 re f*
+BT 1 0 0 1 0 14 Tm .153516 Tw 12 TL /F1 10 Tf 0 0 0 rg (When B receives the INVALIDATE request for page 1 from A \(as A writes on A1\), B should) Tj T* 0 Tw (make B1 INVALID and call ) Tj /F3 10 Tf (madvise\(B1,) Tj ( ) Tj (PAGE_SIZE,) Tj ( ) Tj (MADV_DONTNEED\)) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 72 cm
+Q
+q
+1 0 0 1 20 60 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (This will make any following access to B1 a page fault.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 54 cm
+Q
+q
+1 0 0 1 20 30 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .021098 Tw (If B1 is in the INVALID state, B should start handling Read \(B1\) or Write \(B1\) from the page) Tj T* 0 Tw (fault: e.g., Read\(B1\) attempts to fetch A1.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 24 cm
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.062765 Tw (This will allow us to have an unified read fetch logic for an initial read \(@93\) and a read) Tj T* 0 Tw (from a invalidated page \(@91\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 216.0236 cm
+Q
+q
+1 0 0 1 62.69291 171.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 30 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 30 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Concurrency protocol \(@89 in Piazza\):) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 20 Tm  T* ET
+q
+1 0 0 1 20 24 cm
+Q
+q
+1 0 0 1 20 24 cm
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.354597 Tw (Assume there are no concurrent operations: B takes some actions after A completes its) Tj T* 0 Tw (operation \(and MSI protocol handling\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 171.0236 cm
+Q
+q
+1 0 0 1 62.69291 141.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (P3.2: Test your code) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 111.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 2.23686 Tw ([10 points] Run two applications as follows and take a screenshot of the outputs \(printfs\) from both) Tj T* 0 Tw (applications. You may take multiple screenshots.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 105.0236 cm
+Q
+q
+1 0 0 1 62.69291 105.0236 cm
+Q
+q
+1 0 0 1 62.69291 93.02362 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Pair the two application with 3 pages [0-2]) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 87.02362 cm
+Q
+ 
+endstream
+endobj
+38 0 obj
+<<
+/Length 7323
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 753.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 747.0236 cm
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 2 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 729.0236 cm
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 reads page 0) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+Q
+q
+1 0 0 1 62.69291 699.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 693.0236 cm
+Q
+q
+1 0 0 1 62.69291 681.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 2 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 675.0236 cm
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 reads all pages) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 657.0236 cm
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 639.0236 cm
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 2 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 621.0236 cm
+Q
+q
+1 0 0 1 62.69291 609.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 2 writes "Hello Userfaultfd!" to page 2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 603.0236 cm
+Q
+q
+1 0 0 1 62.69291 591.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 585.0236 cm
+Q
+q
+1 0 0 1 62.69291 573.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 2 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 567.0236 cm
+Q
+q
+1 0 0 1 62.69291 555.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 wites "Writing this to all pages!" to all pages) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 549.0236 cm
+Q
+q
+1 0 0 1 62.69291 537.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 531.0236 cm
+Q
+q
+1 0 0 1 62.69291 519.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 2 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 513.0236 cm
+Q
+q
+1 0 0 1 62.69291 501.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 reads all pages) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 495.0236 cm
+Q
+q
+1 0 0 1 62.69291 483.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 1 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 477.0236 cm
+Q
+q
+1 0 0 1 62.69291 465.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Application 2 views all MSI contents) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 465.0236 cm
+Q
+q
+1 0 0 1 62.69291 435.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Submission) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 393.0236 cm
+q
+.960784 .960784 .862745 rg
+n 295.3427 24 48 12 re f*
+.960784 .960784 .862745 rg
+n 350.5884 24 42 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 315.8745 12 24 12 re f*
+.960784 .960784 .862745 rg
+n 339.8745 12 7.271318 12 re f*
+.960784 .960784 .862745 rg
+n 347.1458 12 60 12 re f*
+BT 1 0 0 1 0 26 Tm 1.685697 Tw 12 TL /F1 10 Tf 0 0 0 rg (Make a folder named with your SBU ID \(e.g., 112233445\), put ) Tj /F3 10 Tf (Makefile) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (s2dsm.c) Tj /F1 10 Tf (, and screenshot) Tj T* 0 Tw 1.271318 Tw /F3 10 Tf (s2dsm.png) Tj /F1 10 Tf ( files in the folder, create a single gzip-ed tarball named ) Tj /F3 10 Tf ([SBU) Tj ( ) Tj (ID].tar.gz) Tj /F1 10 Tf (, and turn the) Tj T* 0 Tw (gzip-ed tarball to Blackboard.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 311.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 72 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 72 48 54 12 re f*
+.960784 .960784 .862745 rg
+n 174 48 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 36 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 54 12 re f*
+BT 1 0 0 1 0 50 Tm 12 TL /F3 10 Tf 0 0 0 rg ($  tar czvf ) Tj .4 .4 .4 rg (112233445) Tj 0 0 0 rg (.tar.gz ) Tj .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/Makefile) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/s2dsm.c) Tj T* .4 .4 .4 rg (112233445) Tj 0 0 0 rg (/s2dsm.png) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+39 0 obj
+<<
+/Nums [ 0 40 0 R 1 41 0 R 2 42 0 R 3 43 0 R 4 44 0 R ]
+>>
+endobj
+40 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+41 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+42 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+43 0 obj
+<<
+/S /D /St 4
+>>
+endobj
+44 0 obj
+<<
+/S /D /St 5
+>>
+endobj
+xref
+0 45
+0000000000 65535 f 
+0000000073 00000 n 
+0000000124 00000 n 
+0000000231 00000 n 
+0000000343 00000 n 
+0000000448 00000 n 
+0000000652 00000 n 
+0000000876 00000 n 
+0000001083 00000 n 
+0000001277 00000 n 
+0000001518 00000 n 
+0000001724 00000 n 
+0000001930 00000 n 
+0000002125 00000 n 
+0000002350 00000 n 
+0000002556 00000 n 
+0000002662 00000 n 
+0000002989 00000 n 
+0000003064 00000 n 
+0000003177 00000 n 
+0000003321 00000 n 
+0000003488 00000 n 
+0000003648 00000 n 
+0000003812 00000 n 
+0000003954 00000 n 
+0000004066 00000 n 
+0000004234 00000 n 
+0000004363 00000 n 
+0000004505 00000 n 
+0000004617 00000 n 
+0000004772 00000 n 
+0000004917 00000 n 
+0000005052 00000 n 
+0000005164 00000 n 
+0000005252 00000 n 
+0000012611 00000 n 
+0000022060 00000 n 
+0000031906 00000 n 
+0000042220 00000 n 
+0000049595 00000 n 
+0000049672 00000 n 
+0000049706 00000 n 
+0000049740 00000 n 
+0000049774 00000 n 
+0000049808 00000 n 
+trailer
+<<
+/ID 
+[<d5be1f68c32983a15da2569ae01d6087><d5be1f68c32983a15da2569ae01d6087>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 16 0 R
+/Root 15 0 R
+/Size 45
+>>
+startxref
+49842
+%%EOF
