@@ -82,6 +82,10 @@ void printPageContents(char *addr, int request_page, bool fetch) {
                         updatePageContents(addr, j, message, false);
                         msi_array[j] = s;
                     } else {
+                        char * page_addr = baseAddr + (j * page_size);
+                        if (madvise(page_addr, page_size, MADV_DONTNEED)) {
+                            errExit("Fail to madvise");
+                        }
                         message = resp;
                     }
                 } else message = resp;
