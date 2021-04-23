@@ -14,14 +14,14 @@ MODULE_PARM_DESC(func, "Function to kretprobe; this module will report the funct
 
 atomic_t post_count = ATOMIC_INIT(0);
 atomic_t pre_count = ATOMIC_INIT(0);
-atomic_t context_switches = ATOMIC_INIT(0);
+atomic_t context_switch_count = ATOMIC_INIT(0);
 
 struct my_data {
   struct task_struct * prev;
 };
 
 static int perftop_show(struct seq_file *m, void *v) {
-  seq_printf(m, "Pre count: %d | Post Count: %d | Context Switches : %d \n" , atomic_read(&pre_count), atomic_read(&post_count), atomic_read(&context_switches));
+  seq_printf(m, "Pre count: %d | Post Count: %d | Context Switches : %d \n" , atomic_read(&pre_count), atomic_read(&post_count), atomic_read(&context_switch_count));
   return 0;
 }
 
@@ -42,13 +42,13 @@ static int entry_pick_next_fair(struct kretprobe_instance *ri, struct pt_regs *r
   if (data != NULL)
   {
       data->prev = prev;
-      if (prev->comm != NULL && strlen(prev->comm) > 0)
-        {
+      if (prev != NULL && prev->comm != NULL && strlen(prev->comm) > 0) {
           pr_info("Pre Task Name : %s \n", prev->comm);
-        }
+          pr_info("Pre task_struct PID: %d \n", prev->pid );
+      }
   }
   atomic_inc(&pre_count);
-  pr_info("Pre task_struct PID: %d \n", prev->pid );
+  
   return 0;
 }
 NOKPROBE_SYMBOL(entry_pick_next_fair);
@@ -57,25 +57,18 @@ static int ret_pick_next_fair(struct kretprobe_instance *ri, struct pt_regs *reg
 {
   struct my_data *data = (struct my_data *)ri->data;
   struct task_struct * next = (struct task_struct*)(regs->ax);
-  unsigned long retval = regs_return_value(regs);
   
   atomic_inc(&post_count);
   
   if (data != NULL && data->prev != NULL) {
     if (next != NULL && data->prev!= next) {
-        if (retval == (unsigned long) next)
-        {
-          pr_info("Retval same as next \n");
-        }
         pr_info("Post task_struct PID: %d \n", next->pid);
-        if (next->comm != NULL && strlen(next->comm) > 0)
-        {
-          pr_info("Post Task Name : %s \n", next->comm);
+        if (next->comm != NULL && strlen(next->comm) > 0) {
+          pr_info("Next Task Name : %s \n", next->comm);
         }
-        atomic_inc(&context_switches);
+        atomic_inc(&context_switch_count);
     }
   }
-
   return 0;
 }
 NOKPROBE_SYMBOL(ret_pick_next_fair);
@@ -90,7 +83,6 @@ static struct kretprobe my_kretprobe = {
 
 
 static const struct proc_ops perftop_fops = {
-  //.owner = THIS_MODULE,
   .proc_open = perftop_open,
   .proc_read = seq_read,
   .proc_lseek = seq_lseek,
