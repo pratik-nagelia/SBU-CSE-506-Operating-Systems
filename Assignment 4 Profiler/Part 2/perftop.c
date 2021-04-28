@@ -19,7 +19,7 @@ MODULE_PARM_DESC(func, "Function to kretprobe; this module will report the funct
 
 atomic_t post_count = ATOMIC_INIT(0);
 atomic_t pre_count = ATOMIC_INIT(0);
-atomic_t context_switches = ATOMIC_INIT(0);
+atomic_t context_switch_count = ATOMIC_INIT(0);
 DEFINE_SPINLOCK(my_lock);
 
 
@@ -152,7 +152,7 @@ unsigned long long lookup_rb_tree(struct rb_root *mytree, int pid) {
 
 
 static int perftop_show(struct seq_file *m, void *v) {
-  seq_printf(m, "Pre count: %d | Post Count: %d | Context Switches : %d \n" , atomic_read(&pre_count), atomic_read(&post_count), atomic_read(&context_switches));
+  seq_printf(m, "Pre count: %d | Post Count: %d | Context Switches : %d \n" , atomic_read(&pre_count), atomic_read(&post_count), atomic_read(&context_switch_count));
   spin_lock(&my_lock);
   print_rb_tree(&myroot, m);
   spin_unlock(&my_lock);
@@ -204,7 +204,7 @@ static int ret_pick_next_fair(struct kretprobe_instance *ri, struct pt_regs *reg
         spin_unlock(&my_lock);
       }
       insert_hash_table(next->pid, curr);
-      atomic_inc(&context_switches);
+      atomic_inc(&context_switch_count);
   }
   return 0;
 }
