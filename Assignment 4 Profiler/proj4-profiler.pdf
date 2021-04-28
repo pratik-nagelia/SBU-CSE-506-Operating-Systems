@@ -1,0 +1,1662 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 12 0 R /F4 13 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://pointer-overloading.blogspot.com/2013/09/linux-creating-entry-in-proc-file.html)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 536.7736 184.6129 548.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/torvalds/linux/blob/master/fs/cifs/cifs_debug.c)
+>> /Border [ 0 0 0 ] /Rect [ 85.69291 518.7736 276.8829 530.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/torvalds/linux/blob/master/Documentation/kprobes.txt)
+>> /Border [ 0 0 0 ] /Rect [ 123.4929 500.0236 189.0829 512.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/torvalds/linux/tree/master/samples/kprobes)
+>> /Border [ 0 0 0 ] /Rect [ 194.6429 500.0236 237.4329 512.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://en.wikipedia.org/wiki/x86_calling_conventions)
+>> /Border [ 0 0 0 ] /Rect [ 206.3129 482.0236 271.9029 494.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/torvalds/linux/blob/master/include/linux/spinlock.h)
+>> /Border [ 0 0 0 ] /Rect [ 127.3729 464.0236 143.4929 476.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/torvalds/linux/blob/master/include/linux/jhash.h)
+>> /Border [ 0 0 0 ] /Rect [ 149.6129 446.0236 165.7329 458.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/torvalds/linux/blob/master/arch/x86/include/asm/msr.h)
+>> /Border [ 0 0 0 ] /Rect [ 208.4929 428.0236 224.6129 440.0236 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+13 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+14 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R ] /Contents 28 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 27 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+15 0 obj
+<<
+/Contents 29 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 27 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+16 0 obj
+<<
+/Contents 30 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 27 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+17 0 obj
+<<
+/Outlines 19 0 R /PageLabels 31 0 R /PageMode /UseNone /Pages 27 0 R /Type /Catalog
+>>
+endobj
+18 0 obj
+<<
+/Author () /CreationDate (D:20210415224920+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20210415224920+05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Project 4: CPU Profiler) /Trapped /False
+>>
+endobj
+19 0 obj
+<<
+/Count 8 /First 20 0 R /Last 26 0 R /Type /Outlines
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 14 0 R /XYZ 62.69291 647.0236 0 ] /Next 21 0 R /Parent 19 0 R /Title (Introduction)
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 14 0 R /XYZ 62.69291 584.0236 0 ] /Next 22 0 R /Parent 19 0 R /Prev 20 0 R /Title (Recommended Background Reading)
+>>
+endobj
+22 0 obj
+<<
+/Count 3 /Dest [ 14 0 R /XYZ 62.69291 419.0236 0 ] /First 23 0 R /Last 25 0 R /Next 26 0 R /Parent 19 0 R 
+  /Prev 21 0 R /Title (Part 1. Monitoring task scheduling)
+>>
+endobj
+23 0 obj
+<<
+/Dest [ 14 0 R /XYZ 62.69291 290.0236 0 ] /Next 24 0 R /Parent 22 0 R /Title (Part 1.1. Setup procfs)
+>>
+endobj
+24 0 obj
+<<
+/Dest [ 15 0 R /XYZ 62.69291 765.0236 0 ] /Next 25 0 R /Parent 22 0 R /Prev 23 0 R /Title (Part 1.2. Setup Kprobe)
+>>
+endobj
+25 0 obj
+<<
+/Dest [ 15 0 R /XYZ 62.69291 531.0236 0 ] /Parent 22 0 R /Prev 24 0 R /Title (Part 1.3. Count the Number of Context Switches)
+>>
+endobj
+26 0 obj
+<<
+/Dest [ 15 0 R /XYZ 62.69291 231.0236 0 ] /Parent 19 0 R /Prev 22 0 R /Title (Part 2. Print 10 most scheduled tasks)
+>>
+endobj
+27 0 obj
+<<
+/Count 3 /Kids [ 14 0 R 15 0 R 16 0 R ] /Type /Pages
+>>
+endobj
+28 0 obj
+<<
+/Length 9318
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 127.6949 0 Td (Project 4: CPU Profiler) Tj T* -127.6949 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 725.0236 cm
+Q
+q
+1 0 0 1 62.69291 725.0236 cm
+Q
+q
+1 0 0 1 62.69291 713.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Handed out:) Tj /F1 10 Tf ( Friday, April 15, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 707.0236 cm
+Q
+q
+1 0 0 1 62.69291 659.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Due dates:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 27 cm
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Part 1: Friday, April 23, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Part 2: Friday, April 30, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 659.0236 cm
+Q
+q
+1 0 0 1 62.69291 626.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 596.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.178988 Tw (The goal of this project is to design a CPU profiling tool. The tool will be designed as a kernel module) Tj T* 0 Tw (which when loaded, keeps track of the time spent on CPU for each task.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 563.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Recommended Background Reading) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 551.0236 cm
+Q
+q
+1 0 0 1 62.69291 551.0236 cm
+Q
+q
+1 0 0 1 62.69291 539.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Linux /proc file system) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 533.0236 cm
+Q
+q
+1 0 0 1 62.69291 521.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Sample /proc implementation: cifs_debug.c) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 515.0236 cm
+Q
+q
+1 0 0 1 62.69291 503.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Kprobe: ) Tj 0 0 .501961 rg (documentation) Tj 0 0 0 rg (, ) Tj 0 0 .501961 rg (examples) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 497.0236 cm
+Q
+q
+1 0 0 1 62.69291 485.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (x86_64 calling convention: ) Tj 0 0 .501961 rg (documentation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 479.0236 cm
+Q
+q
+1 0 0 1 62.69291 467.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (spinlock: ) Tj 0 0 .501961 rg (API) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 461.0236 cm
+Q
+q
+1 0 0 1 62.69291 449.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Jenkins hash: ) Tj 0 0 .501961 rg (API) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 443.0236 cm
+Q
+q
+1 0 0 1 62.69291 431.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Time measurement \(rdtsc\): ) Tj 0 0 .501961 rg (API) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 431.0236 cm
+Q
+q
+1 0 0 1 62.69291 398.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Part 1. Monitoring task scheduling) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 332.0236 cm
+q
+BT 1 0 0 1 0 50 Tm 1.980651 Tw 12 TL /F1 10 Tf 0 0 0 rg (In part 1, you will design a kernel module, named ) Tj /F3 10 Tf (perftop) Tj /F1 10 Tf (, which will monitor the ) Tj /F3 10 Tf (pick_next_task_fair) Tj /F1 10 Tf  T* 0 Tw .668221 Tw (function of Completely Fair Scheduler \(CFS\). To this end, You will use ) Tj /F3 10 Tf (Kprobe) Tj /F1 10 Tf (, a debugging tool in linux) Tj T* 0 Tw .200651 Tw (kernel. With Kprobes, you can place a pre-event and post-event handlers \(callback functions\) on a certain) Tj T* 0 Tw .955697 Tw (kernel instruction address \(similar to gdb's breakpoint\). The module will display profiling result using the) Tj T* 0 Tw /F3 10 Tf (proc) Tj /F1 10 Tf ( file system.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 302.0236 cm
+q
+.960784 .960784 .862745 rg
+n 114.5661 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 193.3491 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 346.9252 12 48 12 re f*
+BT 1 0 0 1 0 14 Tm 1.27152 Tw 12 TL /F1 10 Tf 0 0 0 rg (Program your module in ) Tj /F4 10 Tf (perftop.c) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (perftop.h) Tj /F1 10 Tf ( \(as needed\). Create ) Tj /F4 10 Tf (Makefile) Tj /F1 10 Tf ( that support ) Tj /F3 10 Tf (all) Tj /F1 10 Tf (,) Tj T* 0 Tw /F3 10 Tf (clean) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (install) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (uninstall) Tj /F1 10 Tf ( rules \(and more as needed\), similar to that of project 2.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 272.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 1.1. Setup procfs) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 254.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([10 points] The first task is to setup a proc file \() Tj /F3 10 Tf (procfs) Tj /F1 10 Tf (\) where the results of the profiler can be displayed.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 248.0236 cm
+Q
+q
+1 0 0 1 62.69291 248.0236 cm
+Q
+q
+1 0 0 1 62.69291 224.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .521318 Tw 12 TL /F1 10 Tf 0 0 0 rg (Review the Linux kernel documents and sample codes about ) Tj /F3 10 Tf (proc) Tj /F1 10 Tf ( file system. The links provided in) Tj T* 0 Tw (the above ) Tj /F3 10 Tf (Recommended Background Reading) Tj /F1 10 Tf ( would be a good staring point.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 218.0236 cm
+Q
+q
+1 0 0 1 62.69291 206.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Write a kernel module named ) Tj /F3 10 Tf (perftop) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 200.0236 cm
+Q
+q
+1 0 0 1 62.69291 188.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (The module should create a proc file named ) Tj /F3 10 Tf (perftop) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 182.0236 cm
+Q
+q
+1 0 0 1 62.69291 170.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (cat /proc/perftop) Tj /F1 10 Tf ( should display "Hello World") Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 170.0236 cm
+Q
+q
+1 0 0 1 62.69291 152.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Deliverables:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 146.0236 cm
+Q
+q
+1 0 0 1 62.69291 146.0236 cm
+Q
+q
+1 0 0 1 62.69291 134.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Load ) Tj /F3 10 Tf (perftop) Tj /F1 10 Tf ( module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 128.0236 cm
+Q
+q
+1 0 0 1 62.69291 116.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Invoke ) Tj /F3 10 Tf (cat /proc/perftop) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 110.0236 cm
+Q
+q
+1 0 0 1 62.69291 98.02362 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 262.91 0 72 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Take a screenshot of the output. Name your screenshot as ) Tj /F4 10 Tf (perftop1.png) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 98.02362 cm
+Q
+ 
+endstream
+endobj
+29 0 obj
+<<
+/Length 10825
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 747.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 1.2. Setup Kprobe) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 729.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([10 points] We will set up Kprobe for the CFS's ) Tj /F3 10 Tf (pick_next_task_fair) Tj /F1 10 Tf ( function.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Tasks:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 705.0236 cm
+Q
+q
+1 0 0 1 62.69291 705.0236 cm
+Q
+q
+1 0 0 1 62.69291 681.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.946412 Tw 12 TL /F1 10 Tf 0 0 0 rg (Review the Linux kernel documents and sample codes about ) Tj /F3 10 Tf (KProbe) Tj /F1 10 Tf (. The links provided in the) Tj T* 0 Tw (above ) Tj /F3 10 Tf (Recommended Background Reading) Tj /F1 10 Tf ( would be a good staring point.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 675.0236 cm
+Q
+q
+1 0 0 1 62.69291 651.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 3.61248 Tw 12 TL /F1 10 Tf 0 0 0 rg (Set a kprobe hook on the ) Tj /F3 10 Tf (pick_next_task_fair) Tj /F1 10 Tf ( function. Register a pre-event handler named) Tj T* 0 Tw /F3 10 Tf (entry_pick_next_fair) Tj /F1 10 Tf ( and a post-event handler called ) Tj /F3 10 Tf (ret_pick_next_fair) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
+Q
+q
+1 0 0 1 62.69291 633.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (The event handler should increment its own counter, named ) Tj /F3 10 Tf (pre_count) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (post_count) Tj /F1 10 Tf (, repsectively.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
+Q
+q
+1 0 0 1 62.69291 615.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (The counter should be displayed by ) Tj /F3 10 Tf (cat /proc/perftop) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 615.0236 cm
+Q
+q
+1 0 0 1 62.69291 597.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Deliverables:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 591.0236 cm
+Q
+q
+1 0 0 1 62.69291 591.0236 cm
+Q
+q
+1 0 0 1 62.69291 579.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Load ) Tj /F3 10 Tf (perftop) Tj /F1 10 Tf ( module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 573.0236 cm
+Q
+q
+1 0 0 1 62.69291 561.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Invoke ) Tj /F3 10 Tf (cat /proc/perftop) Tj /F1 10 Tf ( two times with some time gaps \(e.g., 10 seconds\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 555.0236 cm
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 262.91 0 72 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Take a screenshot of the output. Name your screenshot as ) Tj /F4 10 Tf (perftop2.png) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+Q
+q
+1 0 0 1 62.69291 513.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 1.3. Count the Number of Context Switches) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 483.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .772619 Tw 12 TL /F1 10 Tf 0 0 0 rg ([30 points] We will count the number of cases where the scheduler pick a different task to run: i.e., ) Tj /F3 10 Tf (prev) Tj T* 0 Tw (task != next task) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 465.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Tasks:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 459.0236 cm
+Q
+q
+1 0 0 1 62.69291 459.0236 cm
+Q
+q
+1 0 0 1 62.69291 447.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Set up a kprobe hook on the ) Tj /F3 10 Tf (pick_next_task_fair) Tj /F1 10 Tf ( function \(same as Part 1.2\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 441.0236 cm
+Q
+q
+1 0 0 1 62.69291 417.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 2.318314 Tw 12 TL /F1 10 Tf 0 0 0 rg (On a pre-event handler ) Tj /F3 10 Tf (entry_pick_next_fair) Tj /F1 10 Tf (, obtain the pointer of \(prev\) ) Tj /F3 10 Tf (task_struct) Tj /F1 10 Tf ( from ) Tj /F3 10 Tf (struct) Tj T* 0 Tw (pt_regs *regs) Tj /F1 10 Tf ( using the register calling convention.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 411.0236 cm
+Q
+q
+1 0 0 1 62.69291 375.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm -0.126941 Tw 12 TL /F1 10 Tf 0 0 0 rg (On a post-event handler ) Tj /F3 10 Tf (ret_pick_next_fair) Tj /F1 10 Tf (, obtain the pointer of \(next\) ) Tj /F3 10 Tf (task_struct) Tj /F1 10 Tf ( from ) Tj /F3 10 Tf (struct pt_regs) Tj T* 0 Tw 3.965318 Tw (*regs) Tj /F1 10 Tf (. Check if the prev and next tasks are different. If so, increment the counter named) Tj T* 0 Tw /F3 10 Tf (context_switch_count) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 369.0236 cm
+Q
+q
+1 0 0 1 62.69291 357.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (The counter should be displayed by ) Tj /F3 10 Tf (cat /proc/perftop) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 357.0236 cm
+Q
+q
+1 0 0 1 62.69291 339.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Deliverables:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 333.0236 cm
+Q
+q
+1 0 0 1 62.69291 333.0236 cm
+Q
+q
+1 0 0 1 62.69291 321.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Load ) Tj /F3 10 Tf (perftop) Tj /F1 10 Tf ( module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 315.0236 cm
+Q
+q
+1 0 0 1 62.69291 303.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Invoke ) Tj /F3 10 Tf (cat /proc/perftop) Tj /F1 10 Tf ( two times with some time gaps \(e.g., 10 seconds\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 297.0236 cm
+Q
+q
+1 0 0 1 62.69291 285.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 262.91 0 72 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Take a screenshot of the output. Name your screenshot as ) Tj /F4 10 Tf (perftop3.png) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 279.0236 cm
+Q
+q
+1 0 0 1 62.69291 243.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 279.3129 24 48 12 re f*
+.960784 .960784 .862745 rg
+n 333.1013 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 392.8898 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 139.7922 12 108 12 re f*
+.960784 .960784 .862745 rg
+n 63.36 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 87.36 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 93.36 0 60 12 re f*
+BT 1 0 0 1 0 26 Tm .228443 Tw 12 TL /F1 10 Tf 0 0 0 rg (Make a folder named with your SBU ID \(e.g., 112233445\), put ) Tj /F4 10 Tf (Makefile) Tj /F1 10 Tf (, ) Tj /F4 10 Tf (perftop.c) Tj /F1 10 Tf (, ) Tj /F4 10 Tf (perftop.h) Tj /F1 10 Tf  T* 0 Tw 2.168443 Tw (\(if any\), and the screenshots ) Tj /F4 10 Tf (perftop{1,2,3}.png) Tj /F1 10 Tf ( files in the folder, create a single gzip-ed) Tj T* 0 Tw (tarball named ) Tj /F4 10 Tf ([SBU) Tj ( ) Tj (ID].tar.gz) Tj /F1 10 Tf (, and turn the gzip-ed tarball to Blackboard.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 243.0236 cm
+Q
+q
+1 0 0 1 62.69291 210.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Part 2. Print 10 most scheduled tasks) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 180.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .621988 Tw 12 TL /F1 10 Tf 0 0 0 rg ([50 points] In part 2, you will modify the kprobe event handlers in ) Tj /F3 10 Tf (perftop) Tj /F1 10 Tf ( to keep track of time each task) Tj T* 0 Tw (spends on CPU and print the 10 most scheduled tasks using ) Tj /F3 10 Tf (proc) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 162.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Preliminaries:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 156.0236 cm
+Q
+q
+1 0 0 1 62.69291 156.0236 cm
+Q
+q
+1 0 0 1 62.69291 144.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (We will measure time using ) Tj /F3 10 Tf (rdtsc) Tj /F1 10 Tf ( time stamp counter.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 138.0236 cm
+Q
+q
+1 0 0 1 62.69291 114.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .115407 Tw (Set up a hash table where a PID is used as a key and the start tsc \(the time a task is scheduled on a) Tj T* 0 Tw (CPU\) is stored as a value.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 108.0236 cm
+Q
+q
+1 0 0 1 62.69291 96.02362 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Set up a rb-tree that are ordered by the total tsc \(the accumulative time\) spent by a task on a CPU.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 96.02362 cm
+Q
+q
+1 0 0 1 62.69291 78.02362 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Tasks:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 76.86614 cm
+Q
+ 
+endstream
+endobj
+30 0 obj
+<<
+/Length 5159
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 765.0236 cm
+Q
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .555984 Tw 12 TL /F1 10 Tf 0 0 0 rg (On a post-event handler ) Tj /F3 10 Tf (ret_pick_next_fair) Tj /F1 10 Tf (, if the prev and next tasks are different, we measure the) Tj T* 0 Tw (time spent by each task on CPU as follows.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+Q
+q
+1 0 0 1 62.69291 699.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm .503322 Tw 12 TL /F1 10 Tf 0 0 0 rg (\(1\) For the ) Tj /F3 10 Tf (prev) Tj /F1 10 Tf ( task: we read the current tsc and obtain the start tsc of the ) Tj /F3 10 Tf (prev) Tj /F1 10 Tf ( task from the hash) Tj T* 0 Tw .077984 Tw (table \(using PID as a key\). The difference between two timestamps \(say, ) Tj /F3 10 Tf (elapsed time) Tj /F1 10 Tf (\) will represent) Tj T* 0 Tw (the amount of the time the prev task has been scheduled on a CPU during the scheduling turn.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 693.0236 cm
+Q
+q
+1 0 0 1 62.69291 669.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.785777 Tw 12 TL /F1 10 Tf 0 0 0 rg (\(2\) For the ) Tj /F3 10 Tf (prev) Tj /F1 10 Tf ( task: we remove the old entry from the rb-tree and add the new entry with the) Tj T* 0 Tw (updated total tsc \(the accumulative sum of elapsed times\) to the rb-tree.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+Q
+q
+1 0 0 1 62.69291 651.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (\(3\) For the ) Tj /F3 10 Tf (next) Tj /F1 10 Tf ( task: we update the start tsc of the ) Tj /F3 10 Tf (next) Tj /F1 10 Tf ( task in the hash table with the current tsc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
+Q
+q
+1 0 0 1 62.69291 621.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .584198 Tw (Modify the open function of proc file to print the top 10 most scheduled tasks. Print the PID and the) Tj T* 0 Tw (time \(total tsc\) spent on a CPU.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 621.0236 cm
+Q
+q
+1 0 0 1 62.69291 603.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Deliverables:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 597.0236 cm
+Q
+q
+1 0 0 1 62.69291 597.0236 cm
+Q
+q
+1 0 0 1 62.69291 585.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Load ) Tj /F3 10 Tf (perftop) Tj /F1 10 Tf ( module) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 579.0236 cm
+Q
+q
+1 0 0 1 62.69291 567.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Invoke ) Tj /F3 10 Tf (cat /proc/perftop) Tj /F1 10 Tf ( two times with some time gaps \(e.g., 10 seconds\).) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 561.0236 cm
+Q
+q
+1 0 0 1 62.69291 549.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 262.91 0 72 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Take a screenshot of the output. Name your screenshot as ) Tj /F4 10 Tf (perftop4.png) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+Q
+q
+1 0 0 1 62.69291 507.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 279.3129 24 48 12 re f*
+.960784 .960784 .862745 rg
+n 333.1013 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 392.8898 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 130.8933 12 72 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 24 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 30 0 60 12 re f*
+BT 1 0 0 1 0 26 Tm .228443 Tw 12 TL /F1 10 Tf 0 0 0 rg (Make a folder named with your SBU ID \(e.g., 112233445\), put ) Tj /F4 10 Tf (Makefile) Tj /F1 10 Tf (, ) Tj /F4 10 Tf (perftop.c) Tj /F1 10 Tf (, ) Tj /F4 10 Tf (perftop.h) Tj /F1 10 Tf  T* 0 Tw .388651 Tw (\(if any\), and the screenshots ) Tj /F4 10 Tf (perftop4.png) Tj /F1 10 Tf ( file in the folder, create a single gzip-ed tarball named) Tj T* 0 Tw /F4 10 Tf ([SBU) Tj ( ) Tj (ID].tar.gz) Tj /F1 10 Tf (, and turn the gzip-ed tarball to Blackboard.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 507.0236 cm
+Q
+ 
+endstream
+endobj
+31 0 obj
+<<
+/Nums [ 0 32 0 R 1 33 0 R 2 34 0 R ]
+>>
+endobj
+32 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+33 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+34 0 obj
+<<
+/S /D /St 3
+>>
+endobj
+xref
+0 35
+0000000000 65535 f 
+0000000073 00000 n 
+0000000136 00000 n 
+0000000243 00000 n 
+0000000355 00000 n 
+0000000593 00000 n 
+0000000811 00000 n 
+0000001034 00000 n 
+0000001247 00000 n 
+0000001452 00000 n 
+0000001674 00000 n 
+0000001894 00000 n 
+0000002119 00000 n 
+0000002235 00000 n 
+0000002341 00000 n 
+0000002609 00000 n 
+0000002815 00000 n 
+0000003021 00000 n 
+0000003127 00000 n 
+0000003408 00000 n 
+0000003482 00000 n 
+0000003596 00000 n 
+0000003741 00000 n 
+0000003929 00000 n 
+0000004053 00000 n 
+0000004190 00000 n 
+0000004338 00000 n 
+0000004477 00000 n 
+0000004552 00000 n 
+0000013922 00000 n 
+0000024800 00000 n 
+0000030011 00000 n 
+0000030070 00000 n 
+0000030104 00000 n 
+0000030138 00000 n 
+trailer
+<<
+/ID 
+[<63e8734550c7204bb95054b972de593b><63e8734550c7204bb95054b972de593b>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 18 0 R
+/Root 17 0 R
+/Size 35
+>>
+startxref
+30172
+%%EOF
