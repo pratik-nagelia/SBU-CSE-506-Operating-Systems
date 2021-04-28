@@ -1,0 +1,1014 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 10 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+5 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://lwn.net/Articles/57369/)
+>> /Border [ 0 0 0 ] /Rect [ 105.6929 464.7736 251.8429 476.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://gist.github.com/prashants/3496839)
+>> /Border [ 0 0 0 ] /Rect [ 105.6929 446.7736 189.6129 458.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://kukuruku.co/post/writing-a-file-system-in-linux-kernel/)
+>> /Border [ 0 0 0 ] /Rect [ 105.6929 428.7736 269.0729 440.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (http://pages.cs.wisc.edu/~remzi/OSTEP/file-implementation.pdf)
+>> /Border [ 0 0 0 ] /Rect [ 105.6929 410.7736 229.0629 422.7736 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Courier-Oblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
+endobj
+11 0 obj
+<<
+/Annots [ 6 0 R 7 0 R 8 0 R 9 0 R ] /Contents 27 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+12 0 obj
+<<
+/Contents 28 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 26 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+13 0 obj
+<<
+/Outlines 15 0 R /PageLabels 29 0 R /PageMode /UseNone /Pages 26 0 R /Type /Catalog
+>>
+endobj
+14 0 obj
+<<
+/Author () /CreationDate (D:20210415174518+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20210415174518+05'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+  /Subject (\(unspecified\)) /Title (Project 5: s2fs \(Super Simple File System\)) /Trapped /False
+>>
+endobj
+15 0 obj
+<<
+/Count 11 /First 16 0 R /Last 19 0 R /Type /Outlines
+>>
+endobj
+16 0 obj
+<<
+/Dest [ 11 0 R /XYZ 62.69291 665.0236 0 ] /Next 17 0 R /Parent 15 0 R /Title (Introduction)
+>>
+endobj
+17 0 obj
+<<
+/Dest [ 11 0 R /XYZ 62.69291 518.0236 0 ] /Next 18 0 R /Parent 15 0 R /Prev 16 0 R /Title (Recommended Background Reading)
+>>
+endobj
+18 0 obj
+<<
+/Dest [ 11 0 R /XYZ 62.69291 401.0236 0 ] /Next 19 0 R /Parent 15 0 R /Prev 17 0 R /Title (Part 1: Create a Pseudo File System)
+>>
+endobj
+19 0 obj
+<<
+/Count 6 /Dest [ 12 0 R /XYZ 62.69291 765.0236 0 ] /First 20 0 R /Last 25 0 R /Parent 15 0 R /Prev 18 0 R 
+  /Title (Part 2: Implement File Operations)
+>>
+endobj
+20 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 714.0236 0 ] /Next 21 0 R /Parent 19 0 R /Title (Part 2.1: Create an inode)
+>>
+endobj
+21 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 630.0236 0 ] /Next 22 0 R /Parent 19 0 R /Prev 20 0 R /Title (Part 2.2: Create a directory)
+>>
+endobj
+22 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 570.0236 0 ] /Next 23 0 R /Parent 19 0 R /Prev 21 0 R /Title (Part 2.3: File operations)
+>>
+endobj
+23 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 456.0236 0 ] /Next 24 0 R /Parent 19 0 R /Prev 22 0 R /Title (Part 2.4: Create a file)
+>>
+endobj
+24 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 372.0236 0 ] /Next 25 0 R /Parent 19 0 R /Prev 23 0 R /Title (Part 2.5: Putting it all together)
+>>
+endobj
+25 0 obj
+<<
+/Dest [ 12 0 R /XYZ 62.69291 300.0236 0 ] /Parent 19 0 R /Prev 24 0 R /Title (Part 2.6: Deliverables)
+>>
+endobj
+26 0 obj
+<<
+/Count 2 /Kids [ 11 0 R 12 0 R ] /Type /Pages
+>>
+endobj
+27 0 obj
+<<
+/Length 8876
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 34.87488 0 Td (Project 5: s2fs \(Super Simple File System\)) Tj T* -34.87488 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 725.0236 cm
+Q
+q
+1 0 0 1 62.69291 725.0236 cm
+Q
+q
+1 0 0 1 62.69291 713.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F2 10 Tf 0 0 0 rg (Handed out:) Tj /F1 10 Tf ( Friday, April 15, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 707.0236 cm
+Q
+q
+1 0 0 1 62.69291 677.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL (Due dates:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 9 cm
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Friday, May 7, 2021) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 677.0236 cm
+Q
+q
+1 0 0 1 62.69291 644.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Introduction) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 602.0236 cm
+q
+.960784 .960784 .862745 rg
+n 378.1415 24 24 12 re f*
+BT 1 0 0 1 0 26 Tm 1.459431 Tw 12 TL /F1 10 Tf 0 0 0 rg (The goal of this project is to implement a simple pseudo file system called name ) Tj /F3 10 Tf (s2fs) Tj /F1 10 Tf (. A pseudo file) Tj T* 0 Tw .571163 Tw (system is not backed by disk but resides in memory and is usually used to provide information regarding) Tj T* 0 Tw (the kernel to the user \(e.g., proc file system\).) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 560.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .178221 Tw (Please read the following articles and sample codes to understand how to write a simple file system using) Tj T* 0 Tw .994692 Tw (libfs. Note that these articles are written for older Linux versions, and thus some APIs might have been) Tj T* 0 Tw (renamed/removed.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 530.0236 cm
+q
+.960784 .960784 .862745 rg
+n 116.0714 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 177.607 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 314.6884 12 48 12 re f*
+BT 1 0 0 1 0 14 Tm 1.64784 Tw 12 TL /F1 10 Tf 0 0 0 rg (Program your module in ) Tj /F3 10 Tf (s2fs.c) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (s2fs.h) Tj /F1 10 Tf ( \(as needed\). Create ) Tj /F3 10 Tf (Makefile) Tj /F1 10 Tf ( that support ) Tj /F4 10 Tf (all) Tj /F1 10 Tf (, ) Tj /F4 10 Tf (clean) Tj /F1 10 Tf (,) Tj T* 0 Tw /F4 10 Tf (install) Tj /F1 10 Tf ( and ) Tj /F4 10 Tf (uninstall) Tj /F1 10 Tf ( rules \(and more as needed\), similar to that of project 2.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 497.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Recommended Background Reading) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 485.0236 cm
+Q
+q
+1 0 0 1 62.69291 413.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 66 cm
+Q
+q
+1 0 0 1 20 66 cm
+Q
+q
+1 0 0 1 20 54 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Creating Linux virtual filesystems) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 48 cm
+Q
+q
+1 0 0 1 20 36 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Sample lwnfs code) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 30 cm
+Q
+q
+1 0 0 1 20 18 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Writing a File System in Linux Kernel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 .501961 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (File System Implementation) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 413.0236 cm
+Q
+q
+1 0 0 1 62.69291 380.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Part 1: Create a Pseudo File System) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 362.0236 cm
+q
+.960784 .960784 .862745 rg
+n 185.64 0 24 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg ([20 points] Design a kernel module called ) Tj /F3 10 Tf (s2fs) Tj /F1 10 Tf (, a mountable pseudo file system.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 344.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Tasks:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 338.0236 cm
+Q
+q
+1 0 0 1 62.69291 338.0236 cm
+Q
+q
+1 0 0 1 62.69291 326.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 31.68 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 67.68 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 73.68 0 96 12 re f*
+.960784 .960784 .862745 rg
+n 169.68 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 175.68 0 54 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Define ) Tj /F3 10 Tf (struct) Tj ( ) Tj (file_system_type) Tj ( ) Tj (s2fs_type) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 320.0236 cm
+Q
+q
+1 0 0 1 62.69291 308.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 20.56 0 66 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Use ) Tj /F3 10 Tf (mount_nodev) Tj /F1 10 Tf ( to mount a pseudo file system.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 302.0236 cm
+Q
+q
+1 0 0 1 62.69291 278.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 119.8928 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 137.8928 12 8.180697 12 re f*
+.960784 .960784 .862745 rg
+n 146.0735 12 120 12 re f*
+.960784 .960784 .862745 rg
+n 59.47 0 66 12 re f*
+BT 1 0 0 1 0 14 Tm 2.180697 Tw 12 TL /F1 10 Tf 0 0 0 rg (Define a function named ) Tj /F3 10 Tf (int) Tj ( ) Tj (s2fs_fill_super\(...\)) Tj /F1 10 Tf ( to fill a superblock and pass it as an) Tj T* 0 Tw (argument for ) Tj /F3 10 Tf (mount_nodev) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 272.0236 cm
+Q
+q
+1 0 0 1 62.69291 248.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .955697 Tw 12 TL /F1 10 Tf 0 0 0 rg (During the module init, register the ) Tj /F4 10 Tf (s2fs_type) Tj /F1 10 Tf ( filesystem. During the module exit, unregister the file) Tj T* 0 Tw (system.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 248.0236 cm
+Q
+q
+1 0 0 1 62.69291 230.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Deliverables:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 224.0236 cm
+Q
+q
+1 0 0 1 62.69291 224.0236 cm
+Q
+q
+1 0 0 1 62.69291 200.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 54 12 re f*
+BT 1 0 0 1 0 14 Tm 2.819269 Tw 12 TL /F1 10 Tf 0 0 0 rg (Run the following commands and take a screenshot of the output. Name your screenshot as) Tj T* 0 Tw /F3 10 Tf (s2fs1.png) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 200.0236 cm
+Q
+q
+1 0 0 1 62.69291 106.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 84 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 132 48 240 12 re f*
+.960784 .960784 .862745 rg
+n 186 36 216 12 re f*
+.960784 .960784 .862745 rg
+n 48 24 216 12 re f*
+.960784 .960784 .862745 rg
+n 120 12 150 12 re f*
+.960784 .960784 .862745 rg
+n 126 0 156 12 re f*
+BT 1 0 0 1 0 62 Tm 12 TL /F3 10 Tf 0 0 0 rg ($ mkdir mnt) Tj T* ($ sudo insmod s2fs.ko ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# Inserting the filesystem kernel module) Tj T* /F3 10 Tf 0 0 0 rg ($ sudo mount -t s2fs nodev mnt ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# Mount at dir mnt with option nodev) Tj T* /F3 10 Tf 0 0 0 rg ($ mount ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# Print out all mounted file systems) Tj T* /F3 10 Tf 0 0 0 rg ($ sudo umount ./mnt ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# Unmount the file system) Tj T* /F3 10 Tf 0 0 0 rg ($ sudo rmmod s2fs.ko ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# Remove the kernel module) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+ 
+endstream
+endobj
+28 0 obj
+<<
+/Length 10894
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 744.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Part 2: Implement File Operations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 726.0236 cm
+q
+.960784 .960784 .862745 rg
+n 197.31 0 24 12 re f*
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (Now we will add inode and file operations to ) Tj /F3 10 Tf (s2fs) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 696.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 2.1: Create an inode) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 642.0236 cm
+q
+.960784 .960784 .862745 rg
+n 335.8548 36 36 12 re f*
+.960784 .960784 .862745 rg
+n 371.8548 36 16.01748 12 re f*
+.960784 .960784 .862745 rg
+n 387.8723 36 36 12 re f*
+.960784 .960784 .862745 rg
+n 423.8723 36 16.01748 12 re f*
+.960784 .960784 .862745 rg
+n 439.8898 36 19.98252 12 re f*
+.960784 .960784 .862745 rg
+n 0 24 138 12 re f*
+.960784 .960784 .862745 rg
+n 138 24 6.479976 12 re f*
+.960784 .960784 .862745 rg
+n 144.48 24 66 12 re f*
+.960784 .960784 .862745 rg
+n 210.48 24 6.479976 12 re f*
+.960784 .960784 .862745 rg
+n 216.96 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 240.96 24 6.479976 12 re f*
+.960784 .960784 .862745 rg
+n 247.4399 24 18 12 re f*
+.960784 .960784 .862745 rg
+n 265.4399 24 6.479976 12 re f*
+.960784 .960784 .862745 rg
+n 271.9199 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 155.06 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 267.88 0 84 12 re f*
+BT 1 0 0 1 0 38 Tm 10.01748 Tw 12 TL /F1 10 Tf 0 0 0 rg ([15 points] Write a function to create an inode, called ) Tj /F3 10 Tf (static) Tj ( ) Tj (struct) Tj ( ) Tj (inode) Tj T* 0 Tw .479976 Tw (*s2fs_make_inode\(struct) Tj ( ) Tj (super_block) Tj ( ) Tj (*sb,) Tj ( ) Tj (int) Tj ( ) Tj (mode\)) Tj /F1 10 Tf (. The function accepts two inputs, the) Tj T* 0 Tw 2.923516 Tw (superblock of the filesystem and the mode which decides the type \(a directory vs a file\) and the) Tj T* 0 Tw (permission. Make sure you set the ) Tj /F3 10 Tf (i_ino) Tj /F1 10 Tf ( field of inode with ) Tj /F3 10 Tf (get_next_ino\(\)) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 612.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 2.2: Create a directory) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 582.0236 cm
+q
+.960784 .960784 .862745 rg
+n 244 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 280 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 286 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 322 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 328 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 364 12 6 12 re f*
+.960784 .960784 .862745 rg
+n 370 12 96 12 re f*
+.960784 .960784 .862745 rg
+n 466 12 0 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 42 12 re f*
+.960784 .960784 .862745 rg
+n 42 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 48 0 66 12 re f*
+.960784 .960784 .862745 rg
+n 114 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 120 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 144 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 150 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 186 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 192 0 36 12 re f*
+.960784 .960784 .862745 rg
+n 228 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 234 0 48 12 re f*
+.960784 .960784 .862745 rg
+n 282 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 288 0 30 12 re f*
+.960784 .960784 .862745 rg
+n 318 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 324 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 348 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 354 0 66 12 re f*
+BT 1 0 0 1 0 14 Tm 12 TL /F1 10 Tf 0 0 0 rg ([15 points] Write a function to create a directory, called ) Tj /F3 10 Tf (static) Tj ( ) Tj (struct) Tj ( ) Tj (dentry) Tj ( ) Tj (*s2fs_create_dir) Tj  T* (\(struct) Tj ( ) Tj (super_block) Tj ( ) Tj (*sb,) Tj ( ) Tj (struct) Tj ( ) Tj (dentry) Tj ( ) Tj (*parent,) Tj ( ) Tj (const) Tj ( ) Tj (char) Tj ( ) Tj (*dir_name\);) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 552.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 2.3: File operations) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 498.0236 cm
+q
+.960784 .960784 .862745 rg
+n 46.93165 24 54 12 re f*
+.960784 .960784 .862745 rg
+n 107.8433 24 84 12 re f*
+.960784 .960784 .862745 rg
+n 219.5666 24 90 12 re f*
+BT 1 0 0 1 0 38 Tm .705488 Tw 12 TL /F1 10 Tf 0 0 0 rg ([15 points] To handle a file, the filesystem needs to know how to open, read and write a file. Write three) Tj T* 0 Tw 1.351647 Tw (functions, ) Tj /F3 10 Tf (s2fs_open) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (s2fs_read_file) Tj /F1 10 Tf (, and ) Tj /F3 10 Tf (s2fs_write_file) Tj /F1 10 Tf (. In this project we will not use the) Tj T* 0 Tw 1.264692 Tw (open and the write fuctions so they will simply return 0. The read function should return "Hello World!") Tj T* 0 Tw (string to the user.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 468.0236 cm
+q
+.960784 .960784 .862745 rg
+n 46.39458 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 143.8714 12 90 12 re f*
+.960784 .960784 .862745 rg
+n 295.6883 12 30 12 re f*
+.960784 .960784 .862745 rg
+n 333.8806 12 36 12 re f*
+.960784 .960784 .862745 rg
+n 397.3852 12 30 12 re f*
+BT 1 0 0 1 0 14 Tm 2.63229 Tw 12 TL /F1 10 Tf 0 0 0 rg (Create a ) Tj /F3 10 Tf (s2fs_fops) Tj /F1 10 Tf ( of type ) Tj /F3 10 Tf (file_operations) Tj /F1 10 Tf ( and assign ) Tj /F3 10 Tf (.read) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (.write) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (.open) Tj /F1 10 Tf ( with the) Tj T* 0 Tw (functions you wrote here.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 438.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 2.4: Create a file) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 384.0236 cm
+q
+.960784 .960784 .862745 rg
+n 218.44 36 36 12 re f*
+.960784 .960784 .862745 rg
+n 254.44 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 260.44 36 78 12 re f*
+.960784 .960784 .862745 rg
+n 338.44 36 6 12 re f*
+.960784 .960784 .862745 rg
+n 344.44 36 120 12 re f*
+.960784 .960784 .862745 rg
+n 464.44 36 0 12 re f*
+.960784 .960784 .862745 rg
+n 0 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 24 24 8.807976 12 re f*
+.960784 .960784 .862745 rg
+n 32.80798 24 66 12 re f*
+.960784 .960784 .862745 rg
+n 98.80798 24 8.807976 12 re f*
+.960784 .960784 .862745 rg
+n 107.616 24 24 12 re f*
+.960784 .960784 .862745 rg
+n 131.616 24 8.807976 12 re f*
+.960784 .960784 .862745 rg
+n 140.4239 24 36 12 re f*
+.960784 .960784 .862745 rg
+n 176.4239 24 8.807976 12 re f*
+.960784 .960784 .862745 rg
+n 185.2319 24 36 12 re f*
+.960784 .960784 .862745 rg
+n 221.2319 24 8.807976 12 re f*
+.960784 .960784 .862745 rg
+n 230.0399 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 260.0399 24 8.807976 12 re f*
+.960784 .960784 .862745 rg
+n 268.8479 24 30 12 re f*
+.960784 .960784 .862745 rg
+n 298.8479 24 8.807976 12 re f*
+.960784 .960784 .862745 rg
+n 307.6558 24 98.80798 12 re f*
+.960784 .960784 .862745 rg
+n 210.9599 12 54 12 re f*
+.960784 .960784 .862745 rg
+n 396.7298 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 54 12 re f*
+BT 1 0 0 1 0 38 Tm 12 TL /F1 10 Tf 0 0 0 rg ([15 points] Write a function to create a file, called ) Tj /F3 10 Tf (static) Tj ( ) Tj (struct dentry) Tj ( ) Tj (*s2fs_create_file\(st) Tj  T* 2.807976 Tw (ruct) Tj ( ) Tj (super_block) Tj ( ) Tj (*sb,) Tj ( ) Tj (struct) Tj ( ) Tj (dentry) Tj ( ) Tj (*dir,) Tj ( ) Tj (const) Tj ( ) Tj (char *file_name\)) Tj /F1 10 Tf (. The funcion) Tj T* 0 Tw 2.009985 Tw (should create a file with the name stored in ) Tj /F3 10 Tf (file_name) Tj /F1 10 Tf ( inside directory pointed by ) Tj /F3 10 Tf (dir) Tj /F1 10 Tf ( dentry. Set) Tj T* 0 Tw /F3 10 Tf (s2fs_fops) Tj /F1 10 Tf ( as ) Tj /F4 10 Tf (file_operations) Tj /F1 10 Tf (.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 354.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 2.5: Putting it all together) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 312.0236 cm
+q
+.960784 .960784 .862745 rg
+n 89.87995 24 102 12 re f*
+.960784 .960784 .862745 rg
+n 75.59886 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 284.8832 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 410.7409 12 18 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 90 12 re f*
+.960784 .960784 .862745 rg
+n 112.24 0 96 12 re f*
+BT 1 0 0 1 0 26 Tm 1.979983 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] Update ) Tj /F3 10 Tf (s2fs_fill_super\(\)) Tj /F1 10 Tf ( function \(Part 1\) so that after mounting, ) Tj /F4 10 Tf (s2fs) Tj /F1 10 Tf ( creates \(1\) a) Tj T* 0 Tw .564431 Tw (directory named ) Tj /F3 10 Tf (foo) Tj /F1 10 Tf ( in the root directory, and \(2\) a file named ) Tj /F3 10 Tf (bar) Tj /F1 10 Tf ( inside the subdirectory ) Tj /F3 10 Tf (foo) Tj /F1 10 Tf (. Use the) Tj T* 0 Tw /F3 10 Tf (s2fs_create_dir) Tj /F1 10 Tf ( and ) Tj /F3 10 Tf (s2fs_create_file) Tj /F1 10 Tf ( functions, defined in Parts 2.2 and 2.4.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 282.0236 cm
+q
+BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (Part 2.6: Deliverables) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 252.0236 cm
+q
+.960784 .960784 .862745 rg
+n 0 0 54 12 re f*
+BT 1 0 0 1 0 14 Tm .84686 Tw 12 TL /F1 10 Tf 0 0 0 rg ([10 points] Run the following commands and take a screenshot of the output. Name your screenshot as) Tj T* 0 Tw /F3 10 Tf (s2fs2.png) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 146.8236 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 468.6898 96 re B*
+Q
+q
+.960784 .960784 .862745 rg
+n 186 60 132 12 re f*
+.960784 .960784 .862745 rg
+n 12 48 12 12 re f*
+.960784 .960784 .862745 rg
+n 78 48 132 12 re f*
+.960784 .960784 .862745 rg
+n 60 36 294 12 re f*
+.960784 .960784 .862745 rg
+n 12 24 12 12 re f*
+.960784 .960784 .862745 rg
+n 120 12 54 12 re f*
+BT 1 0 0 1 0 74 Tm 12 TL /F3 10 Tf 0 0 0 rg ($ sudo insmod s2fs.ko) Tj T* ($ sudo mount -t s2fs nodev mnt ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# mount the filesystem) Tj T* /F3 10 Tf 0 0 0 rg ($ ) Tj 0 .501961 0 rg (cd) Tj 0 0 0 rg ( mnt/foo ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# change the directory) Tj T* /F3 10 Tf 0 0 0 rg ($ cat bar ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# read bar. check if you can see ``Hello World!'') Tj T* /F3 10 Tf 0 0 0 rg ($ ) Tj 0 .501961 0 rg (cd) Tj 0 0 0 rg ( ../..) Tj T* ($ sudo umount ./mnt ) Tj /F5 10 Tf .25098 .501961 .501961 rg (# unmount) Tj T* /F3 10 Tf 0 0 0 rg ($ sudo rmmod s2fs.ko) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 102.8236 cm
+q
+.960784 .960784 .862745 rg
+n 288.8338 24 48 12 re f*
+.960784 .960784 .862745 rg
+n 343.4878 24 36 12 re f*
+.960784 .960784 .862745 rg
+n 386.1418 24 36 12 re f*
+.960784 .960784 .862745 rg
+n 106.4338 12 78 12 re f*
+.960784 .960784 .862745 rg
+n 0 0 24 12 re f*
+.960784 .960784 .862745 rg
+n 24 0 6 12 re f*
+.960784 .960784 .862745 rg
+n 30 0 60 12 re f*
+BT 1 0 0 1 0 26 Tm 1.093984 Tw 12 TL /F1 10 Tf 0 0 0 rg (Make a folder named with your SBU ID \(e.g., 112233445\), put ) Tj /F3 10 Tf (Makefile) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (s2fs.c) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (s2fs.h) Tj /F1 10 Tf ( \(if exists\),) Tj T* 0 Tw 4.534597 Tw (and the screenshots ) Tj /F3 10 Tf (s2fs{1,2}.png) Tj /F1 10 Tf ( file in the folder, create a single gzip-ed tarball named) Tj T* 0 Tw /F3 10 Tf ([SBU) Tj ( ) Tj (ID].tar.gz) Tj /F1 10 Tf (, and turn the gzip-ed tarball to Blackboard.) Tj T* ET
+Q
+Q
+ 
+endstream
+endobj
+29 0 obj
+<<
+/Nums [ 0 30 0 R 1 31 0 R ]
+>>
+endobj
+30 0 obj
+<<
+/S /D /St 1
+>>
+endobj
+31 0 obj
+<<
+/S /D /St 2
+>>
+endobj
+xref
+0 32
+0000000000 65535 f 
+0000000073 00000 n 
+0000000145 00000 n 
+0000000252 00000 n 
+0000000364 00000 n 
+0000000469 00000 n 
+0000000584 00000 n 
+0000000767 00000 n 
+0000000960 00000 n 
+0000001175 00000 n 
+0000001388 00000 n 
+0000001502 00000 n 
+0000001744 00000 n 
+0000001950 00000 n 
+0000002056 00000 n 
+0000002358 00000 n 
+0000002433 00000 n 
+0000002547 00000 n 
+0000002692 00000 n 
+0000002842 00000 n 
+0000003016 00000 n 
+0000003143 00000 n 
+0000003286 00000 n 
+0000003426 00000 n 
+0000003564 00000 n 
+0000003712 00000 n 
+0000003836 00000 n 
+0000003904 00000 n 
+0000012832 00000 n 
+0000023779 00000 n 
+0000023829 00000 n 
+0000023863 00000 n 
+trailer
+<<
+/ID 
+[<a180eb57619746f57a7e28c4a3c3982e><a180eb57619746f57a7e28c4a3c3982e>]
+% ReportLab generated PDF document -- digest (http://www.reportlab.com)
+
+/Info 14 0 R
+/Root 13 0 R
+/Size 32
+>>
+startxref
+23897
+%%EOF
