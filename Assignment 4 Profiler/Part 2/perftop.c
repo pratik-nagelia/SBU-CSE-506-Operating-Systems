@@ -68,6 +68,32 @@ static void remove_hash_table(int number) {
     }
 }
 
+void remove_hash_table_all(void) {
+    struct myhashnode * curr;
+    int key = 0 , count = 0;
+    hash_for_each_possible(myhashtable, curr, hash, key)
+    {
+      printk(KERN_INFO "Deleting : %d \n", curr->value);
+      hash_del(&curr->hash);
+      kfree(curr);
+      count++;
+    }
+    printk(KERN_INFO "Deleted : %d entities from Hashtable \n", count);
+}
+
+void remove_rb_tree_all(struct rb_root * mytree) {
+    struct rb_node *node;
+    int count = 0;
+    for (node = rb_first(mytree); node; node = rb_next(node))
+    {
+      struct myrbtree *temp = rb_entry(node, struct myrbtree, node); 
+      rb_erase(&(temp->node), mytree);
+      kfree(temp);
+      count++;
+  }
+  printk(KERN_INFO " RB Tree Erased. Deleted %d elements\n", count);
+}
+
 static void insert_hash_table(int pid, unsigned long long input_tsc) {
     struct myhashnode * mynode;
 
@@ -247,7 +273,8 @@ static void __exit perftop_exit(void) {
   remove_proc_entry("perftop", NULL);
   unregister_kretprobe(&my_kretprobe);
   pr_info("kretprobe at %p unregistered\n", my_kretprobe.kp.addr);
-
+  remove_hash_table_all();
+  remove_rb_tree_all(&myroot);
   /* nmissed > 0 suggests that maxactive was set too low. */
   pr_info("Missed probing %d instances of %s\n", my_kretprobe.nmissed, my_kretprobe.kp.symbol_name);
 
